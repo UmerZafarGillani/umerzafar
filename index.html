@@ -271,6 +271,22 @@
             margin-right: 15px;
             /* Text se thoda gap */
         }
+
+            /* Responsive logo: smaller on mobile */
+            .navbar-logo {
+                height: 50px; /* default desktop size */
+                width: auto;
+            }
+
+            @media (max-width: 767px) {
+                .navbar-logo {
+                    height: 34px; /* smaller on mobile */
+                }
+                /* reduce right margin on small screens */
+                .image-custom {
+                    margin-right: 8px;
+                }
+            }
     </style>
 </head>
 
@@ -282,7 +298,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="#home">
-                    <img class="image-custom height : 50px; w-auto" src="./umer-zafar-logo-1.png" alt="">
+                    <img class="image-custom navbar-logo" src="./umer-zafar-logo-1.png" alt="">
                 </a>
             </div>
 
@@ -337,10 +353,10 @@
         class="min-h-screen flex items-center justify-center pt-28 px-6 pb-10 relative z-10 bg-[#000000]">
         <div class="max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between relative z-20">
             <!-- Left Side -->
-            <div class="w-full lg:w-1/2 text-center lg:text-left relative z-20  text-[#fff]">
+            <div class="w-full lg:w-1/2 text-center lg:text-left relative z-20 text-[#fff]">
                 <!-- Social Icons -->
-                <div class="hidden lg:flex flex-col gap-5 absolute left-[-20px] top-[16%] -translate-y-1/2 opacity-90">
-                    <a href="#"
+                <div class="hidden lg:flex flex-col gap-5 absolute left-[-20px] top-[11%] -translate-y-1/2 opacity-90">
+                    <a href="https://www.linkedin.com/in/lms-membership-and-learning-community-development-expert/"
                         class="border border-white w-7 h-7 flex items-center justify-center hover:border-primary hover:text-primary transition">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -351,29 +367,29 @@
                 </div>
 
                 <!-- Heading -->
-                <h1 class="heading-font tracking-wider mb-4 ml-10">
+                <h1 class="heading-font tracking-wider mb-4 ml-0 lg:ml-10 text-center lg:text-left">
                     YOUR TRUSTED FREELANCE<br>
                     <span class="text-[#fff]">WORDPRESS DEVELOPER</span>
                 </h1>
 
                 <!-- Subheading -->
-                <p class="text-[#01BA9F] text-lg mb-6 para-font ml-10">
+                <p class="text-[#01BA9F] text-lg mb-6 para-font ml-0 lg:ml-10 text-center lg:text-left">
                     Looking for a WordPress expert who can deliver results?
                 </p>
 
                 <!-- Paragraph -->
-                <p class="para-font text-gray-300 mb-8 max-w-xl ml-10">
+                <p class="para-font text-gray-300 mb-8 max-w-xl ml-0 lg:ml-10 text-center lg:text-left">
                     With over 10 years of experience, I specialize in creating responsive WordPress websites, custom
                     themes, and complex WooCommerce solutions. Whether you need custom development, plugin building, or
                     troubleshooting, I’ve got you covered. I pride myself on delivering user-friendly, SEO-optimized
                     sites that enhance your online presence and drive engagement.
                 </p>
 
-                <p class="para-font mb-8 ml-10">Ready to build something amazing together?</p>
+                <p class="para-font mb-8 ml-0 lg:ml-10 text-center lg:text-left">Ready to build something amazing together?</p>
 
                 <!-- Button -->
                 <a href="#contact"
-                    class="text-white inline-flex items-center bg-[#01BA9F] px-8 py-3 rounded hover:bg-[#01BA9F]/90 transition ml-10">
+                    class="text-white inline-flex items-center bg-[#01BA9F] px-8 py-3 rounded hover:bg-[#01BA9F]/90 transition mx-auto lg:ml-10">
                     HIRE ME TODAY <i class="fa-solid fa-arrow-right ml-2 text-white"></i>
                 </a>
 
@@ -664,7 +680,7 @@
             <p class="text-white text-[18px] mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Let’s turn
                 your ideas into a stunning website with professional WordPress solutions.</p>
             <a href="#contact"
-                class="inline-block bg-[#01BA9F] text-white text-[18px] font-normal px-8 py-4 rounded transition hover:bg-[#00a98f]"
+                class="inline-block bg-[#01BA9F] text-white text-[14px] sm:text-[18px] font-normal px-5 py-3 sm:px-8 sm:py-4 rounded transition hover:bg-[#00a98f]"
                 style="font-family: 'Proxima Nova Light', sans-serif;">
                 START YOUR PROJECT TODAY <i class="fas fa-arrow-right-to-bracket ml-2"></i>
             </a>
@@ -906,7 +922,7 @@
                 ideas into an eye-catching and fully functional WordPress website customized to your needs. Let my
                 expertise take your project to the next level.</p>
             <a href="#contact"
-                class="inline-block bg-[#01BA9F] text-white text-[18px] font-normal px-8 py-4 rounded transition hover:bg-[#00a98f]"
+                class="inline-block bg-[#01BA9F] text-white text-[14px] sm:text-[18px] font-normal px-8 py-4 rounded transition hover:bg-[#00a98f]"
                 style="font-family: 'Proxima Nova Light', sans-serif;">
                 LAUNCH YOUR PROJECT NOW <i class="fas fa-arrow-right-to-bracket ml-2"></i>
             </a>
@@ -1045,81 +1061,84 @@
                 <!-- Contact Form - Left Column (white card) -->
                 <div>
                     <div class="bg-white rounded-md shadow-md p-6">
-                        <form class="contact-form space-y-4">
+                     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form space-y-4">
 
-                            <div>
-                                <label class="block text-black mb-1 text-[15px]"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">Name</label>
-                                <input type="text" placeholder="E.g Sarah Smith"
-                                    class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">
-                            </div>
+    <!-- Hidden fields for Web3Forms -->
+    <input type="hidden" name="access_key" value="616205a6-bfe9-4b5c-9efc-45c963ec0345">
+    <input type="hidden" name="form_subject" value="New Submission from Contact Form">
+    <input type="hidden" name="from_name" value="Umer Zafar Portfolio">
+    <input type="hidden" name="redirect" value="https://umerzafar.com/index2.html">
+    <input type="checkbox" name="botcheck" style="display:none;">
 
-                            <div>
-                                <label class="block text-black mb-1 text-[15px]"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">Email</label>
-                                <input type="email" placeholder="E.g sarahsmith@sample.com"
-                                    class="w-full px-4 py-3 bg-white rounded text-[#000000] text-[15px] border border-gray-200"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">
-                            </div>
+    <div>
+        <label class="block text-black mb-1 text-[15px]" style="font-family: 'Proxima Nova Light', sans-serif;">Name</label>
+        <input type="text" name="name" placeholder="E.g Sarah Smith" required
+            class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200"
+            style="font-family: 'Proxima Nova Light', sans-serif;">
+    </div>
 
-                            <div>
-                                <label class="block text-black mb-1 text-[15px]"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">Budget</label>
-                                <select
-                                    class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 appearance-none"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">
-                                    <option value="" disabled selected>--Please choose an option--</option>
-                                    <option value="small">Less than $5,000</option>
-                                    <option value="medium">$5,000 - $10,000</option>
-                                    <option value="large">More than $10,000</option>
-                                </select>
-                            </div>
+    <div>
+        <label class="block text-black mb-1 text-[15px]" style="font-family: 'Proxima Nova Light', sans-serif;">Email</label>
+        <input type="email" name="email" placeholder="E.g sarahsmith@sample.com" required
+            class="w-full px-4 py-3 bg-white rounded text-[#000000] text-[15px] border border-gray-200"
+            style="font-family: 'Proxima Nova Light', sans-serif;">
+    </div>
 
-                            <div>
-                                <label class="block text-black mb-1 text-[15px]"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">Company Size</label>
-                                <select
-                                    class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 appearance-none"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">
-                                    <option value="" disabled selected>--Please choose an option--</option>
-                                    <option value="startup">Startup (1-10)</option>
-                                    <option value="small">Small (11-50)</option>
-                                    <option value="medium">Medium (51-200)</option>
-                                    <option value="large">Large (201+)</option>
-                                </select>
-                            </div>
+    <div>
+        <label class="block text-black mb-1 text-[15px]" style="font-family: 'Proxima Nova Light', sans-serif;">Budget</label>
+        <select name="budget"
+            class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 appearance-none"
+            style="font-family: 'Proxima Nova Light', sans-serif;" required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="Less than $5,000">Less than $5,000</option>
+            <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+            <option value="More than $10,000">More than $10,000</option>
+        </select>
+    </div>
 
-                            <div>
-                                <label class="block text-black mb-1 text-[15px]"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">Preferred Deadline</label>
-                                <select
-                                    class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 appearance-none"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">
-                                    <option value="" disabled selected>--Please choose an option--</option>
-                                    <option value="urgent">Less than 1 week</option>
-                                    <option value="short">1-2 weeks</option>
-                                    <option value="medium">2-4 weeks</option>
-                                    <option value="flexible">Flexible</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-black mb-1 text-[15px]"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">Project Description</label>
-                                <textarea rows="5"
-                                    placeholder="Share the details of your project, objectives, and specific needs."
-                                    class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 resize-vertical"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;"></textarea>
-                            </div>
-                            <div class="mt-4">
-                                <button type="submit"
-                                    class="w-full bg-[#01BA9F] text-white text-[16px] py-3 rounded hover:bg-opacity-90 transition-all"
-                                    style="font-family: 'Proxima Nova Light', sans-serif;">
-                                    SUBMIT
-                                </button>
-                            </div>
+    <div>
+        <label class="block text-black mb-1 text-[15px]" style="font-family: 'Proxima Nova Light', sans-serif;">Company Size</label>
+        <select name="company_size"
+            class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 appearance-none"
+            style="font-family: 'Proxima Nova Light', sans-serif;" required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="Startup (1-10)">Startup (1-10)</option>
+            <option value="Small (11-50)">Small (11-50)</option>
+            <option value="Medium (51-200)">Medium (51-200)</option>
+            <option value="Large (201+)">Large (201+)</option>
+        </select>
+    </div>
 
-                        </form>
+    <div>
+        <label class="block text-black mb-1 text-[15px]" style="font-family: 'Proxima Nova Light', sans-serif;">Preferred Deadline</label>
+        <select name="deadline"
+            class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 appearance-none"
+            style="font-family: 'Proxima Nova Light', sans-serif;" required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="Less than 1 week">Less than 1 week</option>
+            <option value="1-2 weeks">1-2 weeks</option>
+            <option value="2-4 weeks">2-4 weeks</option>
+            <option value="Flexible">Flexible</option>
+        </select>
+    </div>
+
+    <div>
+        <label class="block text-black mb-1 text-[15px]" style="font-family: 'Proxima Nova Light', sans-serif;">Project Description</label>
+        <textarea name="message" rows="5" placeholder="Share the details of your project, objectives, and specific needs." required
+            class="w-full px-4 py-3 bg-white rounded text-black text-[15px] border border-gray-200 resize-vertical"
+            style="font-family: 'Proxima Nova Light', sans-serif;"></textarea>
+    </div>
+
+    <div class="mt-4">
+        <button type="submit"
+            class="w-full bg-[#01BA9F] text-white text-[16px] py-3 rounded hover:bg-opacity-90 transition-all"
+            style="font-family: 'Proxima Nova Light', sans-serif;">
+            SUBMIT
+        </button>
+    </div>
+
+</form>
+
 
                     </div>
                 </div>
@@ -1215,7 +1234,7 @@
                         With over 10 years of experience creating custom themes, developing plugins, and perfecting
                         responsive designs, I’m dedicated
                         to helping businesses succeed online. I am specialized in creating
-                        <a href="#" class="text-[#01BA9F]">LMS &amp; Membership websites</a>.
+                        LMS Membership websites.
                         Beyond WordPress, I’m an avid traveler and love trekking through mountains, finding inspiration
                         in the beauty of nature.
                     </p>
@@ -1240,9 +1259,9 @@
                 <div class="px-6 lg:pl-12">
                     <h3 class="text-white text-xl font-semibold mb-4">HIRE ME TODAY</h3>
                     <p class="text-gray-200 text-sm leading-relaxed">
-                        Want to discuss your next project? <a href="#" class="text-[#01BA9F]">Contact me</a> or send
+                        Want to discuss your next project? <a href="#contact" class="text-[#01BA9F]">Contact me</a> or send
                         message on
-                        <a href="#" class="text-[#01BA9F]">WhatsApp</a>.
+                        <a href="https://wa.me/923323289918" class="text-[#01BA9F]">WhatsApp</a>.
                     </p>
 
                     <div class="mt-6">
