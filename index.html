@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500&display=swap" rel="stylesheet">
     <title>Umer Zafar - WordPress Developer</title>
-    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="icon" type="image/png" href="./topicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -289,11 +289,14 @@
 
             <!-- Menu -->
             <div class="hidden md:flex items-center space-x-10 text-[#fff]">
-                <a href="#" class="text-sm font-medium tracking-wider hover:text-primary transition">SERVICES</a>
-                <a href="#" class="text-sm font-medium tracking-wider hover:text-primary transition">TESTIMONIALS </a>
-                <a href="#" class="text-sm font-medium tracking-wider hover:text-primary transition">INDUSTRIES</a>
-                <a href="#" class="text-sm font-medium tracking-wider hover:text-primary transition">CONTACT</a>
-                <a href="#"
+                <a href="#services"
+                    class="text-sm font-medium tracking-wider hover:text-primary transition">SERVICES</a>
+                <a href="#testimonials"
+                    class="text-sm font-medium tracking-wider hover:text-primary transition">TESTIMONIALS </a>
+                <a href="#industries"
+                    class="text-sm font-medium tracking-wider hover:text-primary transition">INDUSTRIES</a>
+                <a href="#contact" class="text-sm font-medium tracking-wider hover:text-primary transition">CONTACT</a>
+                <a href="#contact"
                     class="text-sm font-medium tracking-wider bg-[#01BA9F] text-[#fff] px-6 py-2 rounded hover:opacity-90 transition">
                     HIRE ME
                 </a>
@@ -313,11 +316,14 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="lg:hidden bg-black/95 border-t border-gray-800">
             <div class="px-4 py-3 space-y-3">
-                <a href="#" class="block text-white hover:text-primary transition-colors hover:pl-2">SERVICES</a>
-                <a href="#" class="block text-white hover:text-primary transition-colors hover:pl-2">TESTIMONIALS</a>
-                <a href="#" class="block text-white hover:text-primary transition-colors hover:pl-2">INDUSTRIES</a>
-                <a href="#" class="block text-white hover:text-primary transition-colors hover:pl-2">CONTACT</a>
-                <a href="#"
+                <a href="#services"
+                    class="block text-white hover:text-primary transition-colors hover:pl-2">SERVICES</a>
+                <a href="#testimonials"
+                    class="block text-white hover:text-primary transition-colors hover:pl-2">TESTIMONIALS</a>
+                <a href="#industries"
+                    class="block text-white hover:text-primary transition-colors hover:pl-2">INDUSTRIES</a>
+                <a href="#contact" class="block text-white hover:text-primary transition-colors hover:pl-2">CONTACT</a>
+                <a href="#contact"
                     class="block bg-primary text-black px-4 py-2 text-center hover:bg-opacity-90 transition-colors hover:scale-[1.02]">
                     HIRE ME
                 </a>
@@ -327,7 +333,8 @@
 
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center pt-28 px-6 pb-10 relative z-10 bg-[#000000]">
+    <section id="home"
+        class="min-h-screen flex items-center justify-center pt-28 px-6 pb-10 relative z-10 bg-[#000000]">
         <div class="max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between relative z-20">
             <!-- Left Side -->
             <div class="w-full lg:w-1/2 text-center lg:text-left relative z-20  text-[#fff]">
@@ -337,13 +344,9 @@
                         class="border border-white w-7 h-7 flex items-center justify-center hover:border-primary hover:text-primary transition">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#"
+                    <a href="https://wa.me/923323289918"
                         class="border border-white w-7 h-7 flex items-center justify-center hover:border-primary hover:text-primary transition">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#"
-                        class="border border-white w-7 h-7 flex items-center justify-center hover:border-primary hover:text-primary transition">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
 
@@ -369,7 +372,7 @@
                 <p class="para-font mb-8 ml-10">Ready to build something amazing together?</p>
 
                 <!-- Button -->
-                <a href="#"
+                <a href="#contact"
                     class="text-white inline-flex items-center bg-[#01BA9F] px-8 py-3 rounded hover:bg-[#01BA9F]/90 transition ml-10">
                     HIRE ME TODAY <i class="fa-solid fa-arrow-right ml-2 text-white"></i>
                 </a>
@@ -392,7 +395,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-16 bg-white">
+    <section id="services" class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-center text-[32px] font-normal text-black mb-2 tracking-wide"
                 style="font-family: Inter, sans-serif; font-weight: 500;">WHAT SERVICES DO I PROVIDE?</h2>
@@ -559,86 +562,95 @@
             </div>
         </div>
     </section>
-   <section class="py-16 bg-white flex justify-center items-center min-h-screen">
-  <div class="container px-6 sm:px-8 md:px-12 mt-0 md:mt-[-190px]">
-    <div class="max-w-5xl text-left mx-auto">
-      <h2 class="text-[25px] font-normal text-black/90 mb-6 tracking-wide"
-        style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 30px;">
-        WHY HIRE UMER ZAFAR AS YOUR FREELANCE WORDPRESS DEVELOPER?
-      </h2>
+    <section class="py-16 bg-white flex justify-center items-center min-h-screen">
+        <div class="container px-6 sm:px-8 md:px-12 mt-0 md:mt-[-190px]">
+            <div class="max-w-5xl text-left mx-auto">
+                <h2 class="text-[25px] font-normal text-black/90 mb-6 tracking-wide"
+                    style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 30px;">
+                    WHY HIRE UMER ZAFAR AS YOUR FREELANCE WORDPRESS DEVELOPER?
+                </h2>
 
-      <div>
-        <p class="text-[rgb(30,32,34)] text-[18px] mb-6"
-          style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 27px;">
-          Choosing the right WordPress developer is crucial for your business. A poorly developed website can hurt your
-          brand and impact your profits. Whether you're planning a new project or looking to enhance an existing site,
-          working with an experienced developer ensures things are done right from the start.
-        </p>
+                <div>
+                    <p class="text-[rgb(30,32,34)] text-[18px] mb-6"
+                        style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 27px;">
+                        Choosing the right WordPress developer is crucial for your business. A poorly developed website
+                        can hurt your
+                        brand and impact your profits. Whether you're planning a new project or looking to enhance an
+                        existing site,
+                        working with an experienced developer ensures things are done right from the start.
+                    </p>
 
-        <p class="text-[rgb(30,32,34)] text-[18px]"
-          style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 27px;">
-          With over 10+ years in the WordPress world, I've seen the consequences of substandard development. Instead of
-          dealing with costly fixes later, why not get it right the first time? I specialize in creating custom
-          WordPress solutions from the ground up, using modern tools and technologies like HTML, CSS, PHP, JavaScript,
-          and jQuery to build sites that perform well and look great. My clients range from startups to large
-          enterprises, and each project is treated with the same level of care and precision.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+                    <p class="text-[rgb(30,32,34)] text-[18px]"
+                        style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 27px;">
+                        With over 10+ years in the WordPress world, I've seen the consequences of substandard
+                        development. Instead of
+                        dealing with costly fixes later, why not get it right the first time? I specialize in creating
+                        custom
+                        WordPress solutions from the ground up, using modern tools and technologies like HTML, CSS, PHP,
+                        JavaScript,
+                        and jQuery to build sites that perform well and look great. My clients range from startups to
+                        large
+                        enterprises, and each project is treated with the same level of care and precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
     <!-- Key Benefits Section -->
     <section class="bg-white">
-  <div class="container mx-auto max-w-5xl mt-0 md:mt-[-220px] px-6 sm:px-8 md:px-12">
-    <h3 class="text-left text-[20px] font-normal mb-6"
-      style="font-family: 'Proxima Nova Light', sans-serif; color: #01BA9F; line-height: 30px;">
-      KEY BENEFITS OF WORKING WITH ME INCLUDE:
-    </h3>
+        <div class="container mx-auto max-w-5xl mt-0 md:mt-[-220px] px-6 sm:px-8 md:px-12">
+            <h3 class="text-left text-[20px] font-normal mb-6"
+                style="font-family: 'Proxima Nova Light', sans-serif; color: #01BA9F; line-height: 30px;">
+                KEY BENEFITS OF WORKING WITH ME INCLUDE:
+            </h3>
 
-    <ul class="space-y-4 mb-8">
-      <li class="flex items-start text-[18px]"
-        style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
-        <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
-        Extensive experience developing custom WordPress solutions for clients across industries.
-      </li>
+            <ul class="space-y-4 mb-8">
+                <li class="flex items-start text-[18px]"
+                    style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
+                    <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
+                    Extensive experience developing custom WordPress solutions for clients across industries.
+                </li>
 
-      <li class="flex items-start text-[18px]"
-        style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
-        <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
-        Consistent updates and clear communication to keep your project on track.
-      </li>
+                <li class="flex items-start text-[18px]"
+                    style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
+                    <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
+                    Consistent updates and clear communication to keep your project on track.
+                </li>
 
-      <li class="flex items-start text-[18px]"
-        style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
-        <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
-        Proficiency in front-end and back-end development ensures cohesive and optimized builds.
-      </li>
+                <li class="flex items-start text-[18px]"
+                    style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
+                    <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
+                    Proficiency in front-end and back-end development ensures cohesive and optimized builds.
+                </li>
 
-      <li class="flex items-start text-[18px]"
-        style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
-        <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
-        I stand by my work, offering a 6-month post-launch guarantee to fix any issues within the original project
-        scope.
-      </li>
+                <li class="flex items-start text-[18px]"
+                    style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
+                    <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
+                    I stand by my work, offering a 6-month post-launch guarantee to fix any issues within the original
+                    project
+                    scope.
+                </li>
 
-      <li class="flex items-start text-[18px]"
-        style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
-        <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
-        From planning and development to launch and ongoing improvements, I’m here to support your success at every
-        stage.
-      </li>
-    </ul>
+                <li class="flex items-start text-[18px]"
+                    style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
+                    <span class="text-[#01BA9F] mr-3 mt-1"><i class="fas fa-check"></i></span>
+                    From planning and development to launch and ongoing improvements, I’m here to support your success
+                    at every
+                    stage.
+                </li>
+            </ul>
 
-    <p class="text-[18px]"
-      style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
-      Choosing me means choosing reliability, quality, and a partnership you can count on. Let’s build your project the
-      right way and set your business up for lasting success.
-    </p>
-  </div>
-</section>
+            <p class="text-[18px]"
+                style="font-family: 'Proxima Nova Light', sans-serif; color: rgb(30,32,34); line-height: 27px;">
+                Choosing me means choosing reliability, quality, and a partnership you can count on. Let’s build your
+                project the
+                right way and set your business up for lasting success.
+            </p>
+        </div>
+    </section>
 
     <!-- Call to Action Section -->
     <section class="py-16 bg-[#3a4043] mt-[50px]">
@@ -651,7 +663,7 @@
             </div>
             <p class="text-white text-[18px] mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Let’s turn
                 your ideas into a stunning website with professional WordPress solutions.</p>
-            <a href="#"
+            <a href="#contact"
                 class="inline-block bg-[#01BA9F] text-white text-[18px] font-normal px-8 py-4 rounded transition hover:bg-[#00a98f]"
                 style="font-family: 'Proxima Nova Light', sans-serif;">
                 START YOUR PROJECT TODAY <i class="fas fa-arrow-right-to-bracket ml-2"></i>
@@ -660,7 +672,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-white">
+    <section id="testimonials" class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-center text-[25px] font-normal text-[rgb(30, 32, 34)] mb-2 tracking-wide"
                 style="font-family: 'Proxima Nova Light', sans-serif;">WHAT CLIENTS ARE SAYING ABOUT MY WORDPRESS
@@ -778,7 +790,7 @@
     </section>
 
     <!-- Industries Section -->
-    <section class="py-16 bg-white">
+    <section id="industries" class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <h2 class="text-center text-[28px] font-normal text-[rgb(30,32,34)] mb-3 tracking-wide"
                 style="font-family: 'Proxima Nova Light', sans-serif;">
@@ -893,7 +905,7 @@
             <p class="text-white text-[18px] mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Transform your
                 ideas into an eye-catching and fully functional WordPress website customized to your needs. Let my
                 expertise take your project to the next level.</p>
-            <a href="#"
+            <a href="#contact"
                 class="inline-block bg-[#01BA9F] text-white text-[18px] font-normal px-8 py-4 rounded transition hover:bg-[#00a98f]"
                 style="font-family: 'Proxima Nova Light', sans-serif;">
                 LAUNCH YOUR PROJECT NOW <i class="fas fa-arrow-right-to-bracket ml-2"></i>
@@ -1015,7 +1027,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="bg-[#2B2F33] py-16 ">
+    <section id="contact" class="bg-[#2B2F33] py-16 ">
         <div class="container mx-auto px-4">
             <h2 class="text-center text-white text-[32px] leading-[1.2] mb-2"
                 style="font-family: 'Proxima Nova Light', sans-serif;">
@@ -1182,12 +1194,14 @@
                     </div>
 
                     <nav class="mt-6 grid grid-cols-2 gap-y-2 text-sm">
-                        <a href="#" class="text-white hover:text-[#01BA9F] transition-colors duration-300">SERVICES</a>
-                        <a href="#"
+                        <a href="#services"
+                            class="text-white hover:text-[#01BA9F] transition-colors duration-300">SERVICES</a>
+                        <a href="#testimonials"
                             class="text-white hover:text-[#01BA9F] transition-colors duration-300">TESTIMONIALS</a>
-                        <a href="#"
+                        <a href="#industries"
                             class="text-white hover:text-[#01BA9F] transition-colors duration-300">INDUSTRIES</a>
-                        <a href="#" class="text-white hover:text-[#01BA9F] transition-colors duration-300">CONTACT</a>
+                        <a href="#contact"
+                            class="text-white hover:text-[#01BA9F] transition-colors duration-300">CONTACT</a>
                     </nav>
                     <p class="mt-6 text-gray-400 text-white">© 2024 Umer Zafar. All Rights Reserved.</p>
                 </div>
@@ -1207,13 +1221,18 @@
                     </p>
 
                     <div class="mt-6 flex items-center gap-3">
-                        <a href="#" class="w-9 h-9 rounded-md flex items-center justify-center text-white"
-                            style="background:#0A66C2;"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-md flex items-center justify-center text-white"
-                            style="background:#1877F2;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-md flex items-center justify-center text-white"
-                            style="background:linear-gradient(45deg,#feda75,#d62976,#4f5bd5);"><i
-                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/lms-membership-and-learning-community-development-expert/"
+                            class="w-9 h-9 rounded-md flex items-center justify-center text-white"
+                            style="background:#0A66C2;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://wa.me/923323289918" target="_blank"
+                            class="w-9 h-9 rounded-md flex items-center justify-center text-white"
+                            style="background:#25D366;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
                     </div>
                 </div>
 
@@ -1227,7 +1246,7 @@
                     </p>
 
                     <div class="mt-6">
-                        <a href="#"
+                        <a href="#contact"
                             class="inline-flex items-center bg-[#01BA9F] text-black font-semibold px-5 py-3 rounded hover:opacity-90 transition">
                             GET A QUOTE <i class="fas fa-arrow-right ml-3"></i>
                         </a>
@@ -1240,7 +1259,7 @@
 
 
     <!-- WhatsApp Icon -->
-    <a href="#"
+    <a href="https://wa.me/923323289918" target="_blank"
         class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
@@ -1300,6 +1319,23 @@
             });
         });
     });
+
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 70, // adjust offset if navbar fixed
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+
 </script>
 
 </html>
