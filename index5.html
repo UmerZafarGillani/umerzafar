@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HeyDoctor: Seamless Telehealth Solutions for Clinics, Doctors & Patients. Secure, efficient, and fully integrated virtual healthcare platform.">
+    <meta name="description"
+        content="HeyDoctor: Seamless Telehealth Solutions for Clinics, Doctors & Patients. Secure, efficient, and fully integrated virtual healthcare platform.">
     <title>HeyDoctor - Professional Telehealth Software for Healthcare Providers</title>
+    <link rel="icon" type="image/png" href="./topicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -38,11 +41,13 @@
             font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
             line-height: 1.6;
         }
+
         .hero-bg {
             background: linear-gradient(135deg, #7E5D98 0%, #5A3E70 30%, #7E5D98 60%, #5A3E70 100%);
             position: relative;
             overflow: hidden;
         }
+
         .hero-bg::before {
             content: '';
             position: absolute;
@@ -53,13 +58,16 @@
             background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cdefs%3E%3Cpattern id="pattern" width="20" height="20" patternUnits="userSpaceOnUse"%3E%3Ccircle cx="10" cy="10" r="1" fill="%23ffffff" opacity="0.1"/%3E%3C/pattern%3E%3C/defs%3E%3Crect width="100%25" height="100%25" fill="url(%23pattern)"/%3E%3C/svg%3E') repeat;
             pointer-events: none;
         }
+
         .section-bg {
             background-color: var(--section-bg);
         }
+
         .dark-section {
             background-color: var(--dark-bg);
             color: white;
         }
+
         .cta-button {
             background-color: #5A3E70;
             color: white;
@@ -67,14 +75,20 @@
             border-radius: 8px;
             font-weight: 700;
             font-size: 16px;
-            transition: all 0.3s ease;
             border: 2px solid #5A3E70;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
         }
+
         .cta-button:hover {
-            background-color: #4A3260;
-            border-color: #4A3260;
+            background-color: #4a3260;
+            border-color: #4a3260;
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(90, 62, 112, 0.3);
         }
+
         .secondary-cta {
             background-color: #5A3E70;
             color: white;
@@ -85,11 +99,13 @@
             border: 2px solid #5A3E70;
             transition: all 0.3s ease;
         }
+
         .secondary-cta:hover {
             background-color: #4A3260;
             border-color: #4A3260;
             transform: translateY(-2px);
         }
+
         .feature-card {
             background: linear-gradient(145deg, #FFFFFF 0%, #F8F6FC 50%, #E8E2F1 100%);
             padding: 32px;
@@ -98,10 +114,12 @@
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
+
         .feature-card:hover {
             border-color: var(--accent-teal);
             transform: translateY(-8px);
         }
+
         .problem-card {
             background: linear-gradient(145deg, #FFFFFF 0%, #F0EDE9 50%, #E5DCD3 100%);
             padding: 24px;
@@ -109,10 +127,12 @@
             transition: all 0.3s ease;
             border-left: 4px solid var(--accent-peach);
         }
+
         .problem-card:hover {
             background: linear-gradient(145deg, #C9B5D6 0%, #F0EDE9 50%, #E5DCD3 100%);
             color: white;
         }
+
         .benefit-card {
             background: linear-gradient(145deg, var(--light-secondary) 0%, #FFFFFF 50%, var(--section-bg) 100%);
             padding: 24px;
@@ -120,10 +140,12 @@
             transition: all 0.3s ease;
             border: 2px solid var(--accent-gold);
         }
+
         .benefit-card:hover {
             background: linear-gradient(145deg, var(--accent-gold) 0%, var(--light-secondary) 50%, #FFFFFF 100%);
             color: var(--text-primary);
         }
+
         .social-icons {
             display: flex;
             gap: 16px;
@@ -131,6 +153,7 @@
             margin-top: 32px;
             flex-wrap: wrap;
         }
+
         .social-icon {
             width: 48px;
             height: 48px;
@@ -141,9 +164,11 @@
             font-size: 18px;
             transition: all 0.3s ease;
         }
+
         .social-icon:hover {
             transform: scale(1.1);
         }
+
         .pricing-card {
             background: linear-gradient(145deg, #FFFFFF 0%, #F8F6FC 50%, #E8E2F1 100%);
             padding: 40px 32px;
@@ -153,14 +178,17 @@
             border: 2px solid transparent;
             position: relative;
         }
+
         .pricing-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
+
         .pricing-card.popular {
             border-color: var(--accent-gold);
             background: linear-gradient(145deg, #FFFDF7 0%, #FEF9E7 50%, #FDF2D0 100%);
         }
+
         .pricing-card.popular::before {
             content: 'Most Popular';
             position: absolute;
@@ -174,30 +202,35 @@
             font-size: 12px;
             font-weight: 700;
         }
+
         .pricing-price {
             font-size: 3rem;
             font-weight: 700;
             color: var(--text-primary);
             margin: 20px 0;
         }
+
         .pricing-price span {
             font-size: 1rem;
             font-weight: 400;
             color: var(--text-medium);
         }
+
         .step-card {
             background: white;
             padding: 32px;
             border-radius: 16px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
+
         .step-card:hover {
             border-color: var(--accent-teal);
             transform: translateY(-4px);
         }
+
         .step-number {
             width: 60px;
             height: 60px;
@@ -211,17 +244,20 @@
             font-weight: 700;
             margin: 0 auto 20px;
         }
+
         .testimonial-card {
             background: white;
             padding: 32px;
             border-radius: 16px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
             transition: all 0.3s ease;
         }
+
         .testimonial-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
+
         .integration-card {
             background: white;
             padding: 24px;
@@ -230,10 +266,12 @@
             transition: all 0.3s ease;
             border: 1px solid #e5e7eb;
         }
+
         .integration-card:hover {
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             transform: translateY(-2px);
         }
+
         .integration-icon {
             width: 48px;
             height: 48px;
@@ -245,17 +283,20 @@
             justify-content: center;
             font-size: 24px;
         }
+
         .lead-form {
             background: white;
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             margin: 0 auto;
         }
+
         .form-group {
             margin-bottom: 20px;
         }
+
         .form-group input,
         .form-group select {
             width: 100%;
@@ -265,11 +306,13 @@
             font-size: 16px;
             transition: border-color 0.3s ease;
         }
+
         .form-group input:focus,
         .form-group select:focus {
             outline: none;
             border-color: var(--accent-teal);
         }
+
         .faq-item {
             background: white;
             border-radius: 12px;
@@ -277,6 +320,7 @@
             overflow: hidden;
             border: 1px solid #e5e7eb;
         }
+
         .faq-question {
             padding: 24px;
             cursor: pointer;
@@ -285,17 +329,21 @@
             justify-content: space-between;
             align-items: center;
         }
+
         .faq-question:hover {
             background-color: var(--section-bg);
         }
+
         .faq-answer {
             padding: 0 24px 24px;
             display: none;
         }
+
         .faq-toggle {
             font-size: 20px;
             transition: transform 0.3s ease;
         }
+
         /* Powerful Features Section Styling */
         .features-container {
             position: relative;
@@ -318,10 +366,10 @@
             position: relative;
         }
 
-        .features-header h2 {
-            font-size: 3rem;
+        .main-header {
+            font-size: 5rem;
             font-weight: 800;
-            color: var(--text-primary);
+            color: #D4A74A;
             margin-bottom: 16px;
             position: relative;
             display: inline-block;
@@ -347,130 +395,7 @@
             line-height: 1.7;
         }
 
-        .feature-category {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 24px;
-            padding: 48px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
 
-        .feature-category::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 6px;
-            background: linear-gradient(90deg, var(--accent-teal), var(--accent-gold), var(--primary));
-            border-radius: 24px 24px 0 0;
-        }
-
-        .feature-category:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 32px 64px rgba(0, 0, 0, 0.12);
-        }
-
-        .feature-category h3 {
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 32px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        .feature-category h3 i {
-            color: var(--accent-teal);
-            margin-right: 16px;
-            font-size: 32px;
-            background: linear-gradient(135deg, var(--accent-teal), var(--primary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 32px;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.9));
-            border-radius: 16px;
-            border: 1px solid rgba(226, 232, 240, 0.8);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, var(--accent-teal), var(--accent-gold));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .feature-item:hover {
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
-            border-color: var(--accent-teal);
-        }
-
-        .feature-item:hover::before {
-            opacity: 1;
-        }
-
-        .feature-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, var(--accent-teal), var(--primary));
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-            flex-shrink: 0;
-            box-shadow: 0 8px 16px rgba(78, 175, 184, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .feature-item:hover .feature-icon {
-            transform: rotate(5deg) scale(1.1);
-            box-shadow: 0 12px 24px rgba(78, 175, 184, 0.4);
-        }
-
-        .feature-content h4 {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 12px;
-            line-height: 1.3;
-        }
-
-        .feature-content p {
-            color: var(--text-medium);
-            line-height: 1.6;
-            margin: 0;
-            font-size: 15px;
-        }
 
         /* Enhanced Powerful Features Styling */
         .features-container {
@@ -495,7 +420,7 @@
         }
 
         .features-header h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 800;
             color: var(--text-primary);
             margin-bottom: 1rem;
@@ -523,202 +448,8 @@
             line-height: 1.6;
         }
 
-        .feature-category {
-            background: linear-gradient(145deg, #ffffff 0%, #faf9fc 50%, #f5f3f8 100%);
-            border-radius: 20px;
-            padding: 3rem 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 30px rgba(126, 93, 152, 0.08), 0 1px 8px rgba(0, 0, 0, 0.04);
-            border: 1px solid rgba(126, 93, 152, 0.08);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
 
-        .feature-category::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-teal), var(--accent-gold), var(--accent-peach));
-            border-radius: 20px 20px 0 0;
-        }
 
-        .feature-category:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(126, 93, 152, 0.15), 0 10px 25px rgba(0, 0, 0, 0.08);
-        }
-
-        .feature-category h3 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        .feature-category h3 i {
-            color: var(--accent-teal);
-            margin-right: 1rem;
-            font-size: 1.875rem;
-            background: linear-gradient(135deg, var(--accent-teal), var(--accent-gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .feature-category h3::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-teal), var(--accent-gold));
-            border-radius: 2px;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.25rem;
-            padding: 1.5rem;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(250, 249, 252, 0.9) 100%);
-            border-radius: 16px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(126, 93, 152, 0.08);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, var(--accent-teal), var(--accent-gold));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .feature-item:hover {
-            transform: translateX(8px);
-            box-shadow: 0 10px 25px rgba(126, 93, 152, 0.12);
-            background: linear-gradient(135deg, #ffffff 0%, #f8f6fa 100%);
-        }
-
-        .feature-item:hover::before {
-            opacity: 1;
-        }
-
-        .feature-icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--accent-teal), var(--accent-gold));
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.25rem;
-            flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(74, 175, 184, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .feature-item:hover .feature-icon {
-            transform: scale(1.1) rotate(5deg);
-            box-shadow: 0 6px 20px rgba(74, 175, 184, 0.4);
-        }
-
-        .feature-content h4 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-            line-height: 1.4;
-        }
-
-        .feature-content p {
-            color: var(--text-medium);
-            line-height: 1.6;
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .features-header h2 {
-                font-size: 2rem;
-            }
-
-            .feature-category {
-                padding: 2rem 1.5rem;
-            }
-
-            .feature-category h3 {
-                font-size: 1.5rem;
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .feature-item {
-                padding: 1.25rem;
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-
-            .feature-icon {
-                align-self: center;
-            }
-        }
-
-        /* Category specific colors */
-        .feature-category:nth-child(1) .feature-category h3::after,
-        .feature-category:nth-child(1) .feature-item::before {
-            background: linear-gradient(90deg, var(--accent-teal), var(--accent-gold));
-        }
-
-        .feature-category:nth-child(2) .feature-category h3::after,
-        .feature-category:nth-child(2) .feature-item::before {
-            background: linear-gradient(90deg, var(--accent-gold), var(--accent-peach));
-        }
-
-        .feature-category:nth-child(3) .feature-category h3::after,
-        .feature-category:nth-child(3) .feature-item::before {
-            background: linear-gradient(90deg, var(--accent-peach), var(--accent-teal));
-        }
-
-        .feature-category:nth-child(4) .feature-category h3::after,
-        .feature-category:nth-child(4) .feature-item::before {
-            background: linear-gradient(90deg, var(--primary), var(--accent-teal));
-        }
-
-        .feature-category:nth-child(5) .feature-category h3::after,
-        .feature-category:nth-child(5) .feature-item::before {
-            background: linear-gradient(90deg, var(--accent-gold), var(--primary));
-        }
-
-        .feature-category:nth-child(6) .feature-category h3::after,
-        .feature-category:nth-child(6) .feature-item::before {
-            background: linear-gradient(90deg, var(--accent-teal), var(--accent-peach));
-        }
 
         .features-cta {
             text-align: center;
@@ -743,39 +474,6 @@
             box-shadow: 0 12px 32px rgba(78, 175, 184, 0.4);
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .feature-category {
-                padding: 32px 24px;
-                margin-bottom: 32px;
-            }
-
-            .feature-category h3 {
-                font-size: 24px;
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
-            .feature-item {
-                padding: 24px;
-                flex-direction: column;
-                text-align: center;
-                gap: 16px;
-            }
-
-            .feature-icon {
-                width: 56px;
-                height: 56px;
-                font-size: 20px;
-            }
-
-            .features-header h2 {
-                font-size: 2.5rem;
-            }
-        }
         .section-icon {
             width: 48px;
             height: 48px;
@@ -789,6 +487,7 @@
             margin-right: 16px;
             flex-shrink: 0;
         }
+
         .pricing-card {
             background: linear-gradient(145deg, #FFFFFF 0%, #F8F6FC 50%, #E8E2F1 100%);
             padding: 40px 32px;
@@ -798,15 +497,18 @@
             border: 2px solid transparent;
             position: relative;
         }
+
         .pricing-card.popular {
             border-color: var(--accent-gold);
             transform: scale(1.05);
             box-shadow: 0 20px 40px rgba(212, 167, 74, 0.2);
         }
+
         .pricing-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
         }
+
         .step-card {
             background: white;
             padding: 32px;
@@ -816,6 +518,7 @@
             border: 1px solid #E5E7EB;
             position: relative;
         }
+
         .step-number {
             width: 60px;
             height: 60px;
@@ -829,6 +532,7 @@
             font-weight: bold;
             margin: 0 auto 24px;
         }
+
         .testimonial-card {
             background: white;
             padding: 32px;
@@ -836,6 +540,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             border-left: 4px solid var(--accent-teal);
         }
+
         .integration-card {
             background: white;
             padding: 24px;
@@ -845,10 +550,12 @@
             transition: all 0.3s ease;
             border: 1px solid #E5E7EB;
         }
+
         .integration-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
+
         .faq-item {
             background: white;
             border-radius: 12px;
@@ -856,6 +563,7 @@
             border: 1px solid #E5E7EB;
             overflow: hidden;
         }
+
         .faq-question {
             padding: 24px;
             cursor: pointer;
@@ -866,14 +574,17 @@
             color: var(--text-primary);
             transition: all 0.3s ease;
         }
+
         .faq-question:hover {
             background-color: #F9FAFB;
         }
+
         .faq-answer {
             padding: 0 24px 24px;
             color: var(--text-medium);
             display: none;
         }
+
         .contact-form {
             background: white;
             padding: 40px;
@@ -882,9 +593,11 @@
             max-width: 600px;
             margin: 0 auto;
         }
+
         .form-group {
             margin-bottom: 24px;
         }
+
         .form-input {
             width: 100%;
             padding: 12px 16px;
@@ -893,11 +606,13 @@
             font-size: 16px;
             transition: all 0.3s ease;
         }
+
         .form-input:focus {
             outline: none;
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(126, 93, 152, 0.1);
         }
+
         /* === POWERFUL FEATURES SECTION - PREMIUM STYLING === */
 
         .features-container {
@@ -929,15 +644,15 @@
         }
 
         .features-header h2 {
-            font-size: 3.5rem;
-            font-weight: 800;
+            font-size: 1.2rem;
+            font-weight: 700;
             background: linear-gradient(135deg, #7E5D98 0%, #5A3E70 50%, #2B2135 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             position: relative;
-            line-height: 1.1;
+            line-height: 1.2;
         }
 
         .features-header h2::after {
@@ -954,7 +669,7 @@
         }
 
         .features-header p {
-            font-size: 1.3rem;
+            font-size: 0.9rem;
             color: #6B5B7A;
             max-width: 700px;
             margin: 0 auto;
@@ -963,38 +678,18 @@
         }
 
         .feature-category {
-            background: linear-gradient(145deg, #ffffff 0%, #fefefe 50%, #fafbfc 100%);
-            border-radius: 24px;
-            padding: 48px;
-            margin-bottom: 48px;
-            box-shadow: 0 12px 40px rgba(126, 93, 152, 0.1), 0 4px 16px rgba(0, 0, 0, 0.04);
-            border: 1px solid rgba(126, 93, 152, 0.08);
+            padding: 32px;
             position: relative;
             overflow: hidden;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .feature-category::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 6px;
-            background: linear-gradient(90deg, #7E5D98 0%, #5A3E70 30%, #D4A74A 70%, #4EAFB8 100%);
-            border-radius: 24px 24px 0 0;
-        }
 
-        .feature-category:hover {
-            transform: translateY(-12px) scale(1.01);
-            box-shadow: 0 32px 80px rgba(126, 93, 152, 0.2), 0 12px 32px rgba(0, 0, 0, 0.1);
-        }
 
         .feature-category h3 {
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 1.3rem;
+            font-weight: 600;
             color: #2B2135;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             display: flex;
             align-items: center;
             position: relative;
@@ -1011,17 +706,6 @@
             filter: drop-shadow(0 2px 4px rgba(126, 93, 152, 0.3));
         }
 
-        .feature-category h3::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, #D4A74A, #F7B787);
-            border-radius: 2px;
-            box-shadow: 0 2px 6px rgba(212, 167, 74, 0.3);
-        }
 
         .feature-grid {
             display: grid;
@@ -1032,56 +716,30 @@
         .feature-item {
             display: flex;
             align-items: flex-start;
-            gap: 24px;
-            padding: 32px;
-            background: linear-gradient(145deg, #ffffff 0%, #fefefe 100%);
-            border-radius: 20px;
-            border: 1px solid rgba(126, 93, 152, 0.08);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            gap: 20px;
+            padding: 24px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
             position: relative;
             overflow: hidden;
-            cursor: pointer;
         }
 
-        .feature-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 6px;
-            height: 100%;
-            background: linear-gradient(180deg, #7E5D98 0%, #5A3E70 50%, #D4A74A 100%);
-            opacity: 0;
-            transition: all 0.3s ease;
-            border-radius: 0 3px 3px 0;
-        }
 
-        .feature-item:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 24px 48px rgba(126, 93, 152, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
-            border-color: rgba(126, 93, 152, 0.2);
-        }
 
-        .feature-item:hover::before {
-            opacity: 1;
-            width: 8px;
-        }
 
         .feature-icon {
-            width: 64px;
-            height: 64px;
-            border-radius: 16px;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
             background: linear-gradient(135deg, #7E5D98 0%, #5A3E70 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             flex-shrink: 0;
-            box-shadow: 0 12px 24px rgba(126, 93, 152, 0.4);
+            box-shadow: 0 6px 16px rgba(126, 93, 152, 0.3);
             position: relative;
             z-index: 2;
-            transition: all 0.3s ease;
         }
 
         .feature-icon i {
@@ -1089,29 +747,21 @@
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
         }
 
-        .feature-item:hover .feature-icon {
-            transform: scale(1.1);
-            box-shadow: 0 16px 32px rgba(126, 93, 152, 0.5);
-        }
 
         .feature-content h4 {
-            font-size: 1.25rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: 600;
             color: #2B2135;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             line-height: 1.4;
-            transition: color 0.3s ease;
         }
 
-        .feature-item:hover .feature-content h4 {
-            color: #7E5D98;
-        }
 
         .feature-content p {
             color: #6B5B7A;
-            line-height: 1.7;
+            line-height: 1.5;
             margin: 0;
-            font-size: 1rem;
+            font-size: 0.85rem;
         }
 
         /* Staggered animation for feature items */
@@ -1121,12 +771,29 @@
             transform: translateY(40px);
         }
 
-        .feature-item:nth-child(1) { animation-delay: 0.1s; }
-        .feature-item:nth-child(2) { animation-delay: 0.2s; }
-        .feature-item:nth-child(3) { animation-delay: 0.3s; }
-        .feature-item:nth-child(4) { animation-delay: 0.4s; }
-        .feature-item:nth-child(5) { animation-delay: 0.5s; }
-        .feature-item:nth-child(6) { animation-delay: 0.6s; }
+        .feature-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .feature-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .feature-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .feature-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .feature-item:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .feature-item:nth-child(6) {
+            animation-delay: 0.6s;
+        }
 
         @keyframes slideInUp {
             to {
@@ -1172,7 +839,6 @@
 
             .feature-category {
                 padding: 32px 24px;
-                margin-bottom: 32px;
                 border-radius: 16px;
             }
 
@@ -1196,6 +862,7 @@
                 flex-direction: column;
                 text-align: center;
                 gap: 20px;
+                border: 1px solid #d1d5db;
                 border-radius: 16px;
             }
 
@@ -1225,118 +892,139 @@
 
             .feature-item {
                 padding: 20px;
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
             }
         }
+
         @media (max-width: 768px) {
             .hero-bg {
                 padding: 80px 20px;
             }
+
             .hero-bg h1 {
                 font-size: 2.5rem;
             }
+
             .hero-bg p {
                 font-size: 1.2rem;
             }
-            .feature-card, .problem-card, .benefit-card {
+
+            .feature-card,
+            .problem-card,
+            .benefit-card {
                 padding: 20px;
             }
         }
 
         .navbar-logo {
-      height: 50px;
-      /* default desktop size */
-      width: auto;
-    }
+            height: 50px;
+            /* default desktop size */
+            width: auto;
+        }
 
-    @media (max-width: 767px) {
-      .navbar-logo {
-        height: 34px;
-        /* smaller on mobile */
-      }
+        @media (max-width: 767px) {
+            .navbar-logo {
+                height: 34px;
+                /* smaller on mobile */
+            }
 
-      /* reduce right margin on small screens */
-      .image-custom {
-        margin-right: 8px;
-      }
-    }
+            /* reduce right margin on small screens */
+            .image-custom {
+                margin-right: 8px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <nav class="fixed w-full bg-[#000000] backdrop-blur-sm z-50 py-5 border-b border-[#D4A74A]">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-    
-          <!-- Logo -->
-          <div class="logo">
-            <a href="#home">
-              <img class="image-custom navbar-logo" src="./umer-zafar-logo-1.png" alt="">
-            </a>
-          </div>
-    
-    
-          <!-- Menu -->
-          <div class="hidden md:flex items-center space-x-10 text-[#fff]">
-            <a href="./index.html" class=" text-sm font-medium tracking-wider hover:text-primary transition">HOME</a>
-            <div class="relative group inline-block">
-              <a href="#" class="text-sm font-medium tracking-wider hover:text-primary transition flex items-center gap-1">
-                SOLUTION
-                <span>▼</span>
-              </a>
-    
-              <!-- Dropdown -->
-              <div class="absolute left-0 top-full w-64 bg-[#7E5D98] border rounded-md shadow-md
-               opacity-0 pointer-events-none
-               group-hover:opacity-100 group-hover:pointer-events-auto
-               transition-all duration-250 z-50">
-                <a href="#solution" class="block px-4 py-2 hover:text-primary">→ Telehealth Software</a>
-              </div>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#home">
+                    <img class="image-custom navbar-logo" src="./umer-zafar-logo-1.png.png" alt="">
+                </a>
             </div>
-            <a href="#services" class="text-sm font-medium tracking-wider hover:text-primary transition">SERVICES</a>
-            <a href="#contact" class="text-sm font-medium tracking-wider hover:text-primary transition">CONTACT</a>
-            <a href="#contact"
-              class="text-sm font-medium tracking-wider bg-[#6A4C82] text-[#fff] px-6 py-2 rounded border border-white hover:bg-[#fff] hover:text-[#6A4C82] transition">
-              HIRE ME
-            </a>
-          </div>
-    
-          <!-- Mobile button -->
-          <button id="menuButton" class="lg:hidden text-white hover:text-primary transition-colors">
-            <div class="hamburger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
+
+
+            <!-- Menu -->
+            <div class="hidden md:flex items-center space-x-10 text-[#fff]">
+                <a href="./index.html"
+                    class=" text-sm font-medium tracking-wider hover:text-primary transition">HOME</a>
+                <div class="relative group inline-block">
+                    <a href="#"
+                        class="text-sm font-medium tracking-wider hover:text-primary transition flex items-center gap-1">
+                        SOLUTION
+                        <span>▼</span>
+                    </a>
+
+                    <!-- Dropdown -->
+                    <div class="absolute left-0 top-full w-64 bg-black rounded-md shadow-md
+                opacity-0 pointer-events-none
+                group-hover:opacity-100 group-hover:pointer-events-auto
+                transition-all duration-250 z-50
+                mt-[36px]
+            
+                before:content-[''] before:absolute before:-top-[40px] before:left-0 before:w-full before:h-[40px]
+              ">
+                        <a href="./index5.html" class="block px-4 py-2 hover:text-primary">→ Telehealth Software</a>
+                    </div>
+                </div>
+
+
+                <a href="#services"
+                    class="text-sm font-medium tracking-wider hover:text-primary transition">SERVICES</a>
+                <a href="#contact" class="text-sm font-medium tracking-wider hover:text-primary transition">CONTACT</a>
+                <a href="#contact" class="text-sm font-medium tracking-wider bg-[#6A4C82] text-[#fff] px-6 py-2 rounded 
+            hover:bg-[#D4A74A] hover:text-white transition duration-300">
+                    HIRE ME
+                </a>
+
             </div>
-          </button>
-    
+
+            <!-- Mobile button -->
+            <button id="menuButton" class="lg:hidden text-white hover:text-primary transition-colors">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
         </div>
-    
+
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="lg:hidden bg-[#7E5D98] border-t border-gray-800">
-          <div class="px-4 py-3 space-y-3">
-            <a href="./index.html" class="block text-white hover:text-primary transition-colors hover:pl-2">HOME</a>
-    
-            <!-- Solution / Dropdown -->
-            <div class="relative">
-              <button id="mobileDropdownBtn"
-                class="w-full text-left text-sm font-medium tracking-wider hover:text-primary text-[#ffffff] transition flex items-center justify-between gap-1">
-                SOLUTION
-                <span>▼</span>
-              </button>
-    
-              <div id="mobileDropdown" class="hidden bg-[#7E5D98] border rounded-md shadow-md mt-1">
-                <a href="#solution" class="block px-4 py-2 text-white  hover:text-primary">→ Telehealth Software</a>
-              </div>
+        <div id="mobileMenu" class="lg:hidden bg-black border-t border-gray-800">
+            <div class="px-4 py-3 space-y-3">
+                <a href="./index.html" class="block text-white hover:text-primary transition-colors hover:pl-2">HOME</a>
+
+                <!-- Solution / Dropdown -->
+                <div class="relative">
+                    <button id="mobileDropdownBtn"
+                        class="w-full text-left text-sm font-medium tracking-wider hover:text-primary text-[#ffffff] transition flex items-center justify-between gap-1">
+                        SOLUTION
+                        <span>▼</span>
+                    </button>
+
+                    <div id="mobileDropdown" class="hidden bg-black border rounded-md shadow-md mt-1">
+                        <a href="./index5.html" class="block px-4 py-2 text-white  hover:text-primary">→ Telehealth
+                            Software</a>
+                    </div>
+                </div>
+
+                <a href="#services"
+                    class="block text-white hover:text-primary transition-colors hover:pl-2">SERVICES</a>
+                <a href="#contact" class="block text-white hover:text-primary transition-colors hover:pl-2">CONTACT</a>
+                <a href="#contact"
+                    class="block bg-[#1E3A8A] text-white px-4 py-2 text-center hover:bg-[#D4A74A] hover:text-white transition-colors hover:scale-[1.02]">
+                    HIRE ME
+                </a>
             </div>
-    
-            <a href="#services" class="block text-white hover:text-primary transition-colors hover:pl-2">SERVICES</a>
-            <a href="#contact" class="block text-white hover:text-primary transition-colors hover:pl-2">CONTACT</a>
-            <a href="#contact"
-              class="block bg-[#1E3A8A] text-white px-4 py-2 text-center rounded border border-white hover:bg-white hover:text-[#1E3A8A] transition-colors hover:scale-[1.02]">
-              HIRE ME
-            </a>
-          </div>
         </div>
-      </nav>
-    
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero-bg text-white py-24 px-6 relative">
         <div class="max-w-7xl mx-auto relative z-10 mt-12">
@@ -1347,26 +1035,49 @@
                         Seamless Telehealth Solutions for Clinics, Doctors & Patients
                     </h1>
                     <p class="text-lg md:text-xl mb-10 text-light-secondary font-normal leading-relaxed">
-                        Secure, efficient, and fully integrated virtual healthcare platform to manage consultations, billing, and patient care from anywhere in the world.
+                        Secure, efficient, and fully integrated virtual healthcare platform to manage consultations,
+                        billing, and patient care from anywhere in the world.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-6 mb-12">
-                        <button class="cta-button" onclick="scrollToDemo()">Book a Demo</button>
-                        <button class="secondary-cta" onclick="scrollToFeatures()">Explore Features</button>
+                        <button
+                            class="px-6 py-3 rounded text-white bg-[#D4A74A] hover:bg-[#C9B5D6] transition duration-300"
+                            onclick="scrollToDemo()">
+                            Book a Demo
+                        </button>
+
+                        <button
+                            class="px-6 py-3 rounded text-white bg-[#D4A74A] hover:bg-[#C9B5D6] transition duration-300"
+                            onclick="scrollToFeatures()">
+                            Explore Features
+                        </button>
                     </div>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon bg-accent-teal text-white hover:bg-dark-secondary rounded-[8px]" aria-label="LinkedIn">
+
+                    <div class="social-icons flex gap-3 mt-[-10px]">
+                        <a href="#"
+                            class="social-icon w-10 h-10 flex items-center justify-center text-sm bg-accent-teal text-white hover:bg-dark-secondary rounded-[8px]"
+                            aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="social-icon bg-accent-gold text-white hover:bg-accent-peach rounded-[8px]" aria-label="Twitter">
+
+                        <a href="#"
+                            class="social-icon w-10 h-10 flex items-center justify-center text-sm bg-accent-gold text-white hover:bg-accent-peach rounded-[8px]"
+                            aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="social-icon bg-accent-peach text-white hover:bg-accent-gold rounded-[8px] " aria-label="Facebook">
+
+                        <a href="#"
+                            class="social-icon w-10 h-10 flex items-center justify-center text-sm bg-accent-peach text-white hover:bg-accent-gold rounded-[8px]"
+                            aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="social-icon bg-primary text-white hover:bg-dark-secondary rounded-[8px]" aria-label="Instagram">
+
+                        <a href="#"
+                            class="social-icon w-10 h-10 flex items-center justify-center text-sm bg-primary text-white hover:bg-dark-secondary rounded-[8px]"
+                            aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
+
 
                     <!-- Trust Indicators -->
                     <div class="mt-8 flex flex-wrap justify-start gap-6 text-sm text-light-secondary">
@@ -1388,9 +1099,15 @@
                 <!-- Right Side - Image -->
                 <div class="relative">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="HeyDoctor Telehealth Platform Dashboard" class="w-full max-w-lg mx-auto rounded-2xl border-4 border-white/30 shadow-2xl">
-                        <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-accent-peach rounded-full opacity-20 animate-pulse"></div>
-                        <div class="absolute -top-6 -right-6 w-16 h-16 bg-accent-teal rounded-full opacity-30 animate-bounce"></div>
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                            alt="HeyDoctor Telehealth Platform Dashboard"
+                            class="w-full max-w-lg mx-auto rounded-2xl border-4 border-white/30 shadow-2xl">
+                        <div
+                            class="absolute -bottom-6 -left-6 w-24 h-24 bg-accent-peach rounded-full opacity-20 animate-pulse">
+                        </div>
+                        <div
+                            class="absolute -top-6 -right-6 w-16 h-16 bg-accent-teal rounded-full opacity-30 animate-bounce">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1400,61 +1117,71 @@
     <!-- Pain Points Section -->
     <section class="section-bg py-24 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#5A3E70]">Challenges Healthcare Providers Face Today</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#D4A74A]">Challenges Healthcare Providers
+                Face Today</h2>
+            <div class="mb-[30px]">
+                <div class="w-24 h-1 bg-accent-gold mx-auto mt-[-30px] rounded-full"></div>
+            </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="problem-card">
                     <div class="flex items-center mb-4">
-                        <div class="section-icon">
+                        <div class="section-icon bg-[#D4A74A]">
                             <i class="fas fa-clock"></i>
                         </div>
-                        <h3 class="font-bold text-xl text-text-primary">Time-Consuming Manual Processes</h3>
+                        <h3 class="font-bold text-xl text-[#5A3E70]">Time-Consuming Manual Processes</h3>
                     </div>
-                    <p class="text-text-medium">Manual patient management wastes valuable time that could be spent on patient care, leading to burnout and inefficiency.</p>
+                    <p class="text-text-medium">Manual patient management wastes valuable time that could be spent on
+                        patient care, leading to burnout and inefficiency.</p>
                 </div>
                 <div class="problem-card">
                     <div class="flex items-center mb-4">
-                        <div class="section-icon">
+                        <div class="section-icon bg-[#D4A74A]">
                             <i class="fas fa-chart-bar"></i>
                         </div>
-                        <h3 class="font-bold text-xl text-text-primary">Inefficient Tracking & Billing</h3>
+                        <h3 class="font-bold text-xl text-[#5A3E70]">Inefficient Tracking & Billing</h3>
                     </div>
-                    <p class="text-text-medium">Difficulty tracking consultations and managing billing leads to errors, delays, and financial losses.</p>
+                    <p class="text-text-medium">Difficulty tracking consultations and managing billing leads to errors,
+                        delays, and financial losses.</p>
                 </div>
                 <div class="problem-card">
                     <div class="flex items-center mb-4">
-                        <div class="section-icon">
+                        <div class="section-icon bg-[#D4A74A]">
                             <i class="fas fa-plug"></i>
                         </div>
-                        <h3 class="font-bold text-xl text-text-primary">Limited System Integration</h3>
+                        <h3 class="font-bold text-xl text-[#5A3E70]">Limited System Integration</h3>
                     </div>
-                    <p class="text-text-medium">Lack of integration with payment gateways, email systems, and other tools creates data silos and workflow disruptions.</p>
+                    <p class="text-text-medium">Lack of integration with payment gateways, email systems, and other
+                        tools creates data silos and workflow disruptions.</p>
                 </div>
                 <div class="problem-card">
                     <div class="flex items-center mb-4">
-                        <div class="section-icon">
+                        <div class="section-icon bg-[#D4A74A]">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <h3 class="font-bold text-xl text-text-primary">Inefficient Teleconsultations</h3>
+                        <h3 class="font-bold text-xl text-[#5A3E70]">Inefficient Teleconsultations</h3>
                     </div>
-                    <p class="text-text-medium">Clunky workflows make virtual consultations frustrating for both doctors and patients, reducing satisfaction.</p>
+                    <p class="text-text-medium">Clunky workflows make virtual consultations frustrating for both doctors
+                        and patients, reducing satisfaction.</p>
                 </div>
                 <div class="problem-card">
                     <div class="flex items-center mb-4">
-                        <div class="section-icon">
+                        <div class="section-icon bg-[#D4A74A]">
                             <i class="fas fa-file-alt"></i>
                         </div>
-                        <h3 class="font-bold text-xl text-text-primary">Insecure Document Handling</h3>
+                        <h3 class="font-bold text-xl text-[#5A3E70]">Insecure Document Handling</h3>
                     </div>
-                    <p class="text-text-medium">Lack of secure prescription and document management risks patient data security and compliance violations.</p>
+                    <p class="text-text-medium">Lack of secure prescription and document management risks patient data
+                        security and compliance violations.</p>
                 </div>
                 <div class="problem-card">
                     <div class="flex items-center mb-4">
-                        <div class="section-icon">
+                        <div class="section-icon bg-[#D4A74A]">
                             <i class="fas fa-expand-arrows-alt"></i>
                         </div>
-                        <h3 class="font-bold text-xl text-text-primary">Scalability Issues</h3>
+                        <h3 class="font-bold text-xl text-[#5A3E70]">Scalability Issues</h3>
                     </div>
-                    <p class="text-text-medium">Traditional systems struggle to handle growing patient volumes and international expansion needs.</p>
+                    <p class="text-text-medium">Traditional systems struggle to handle growing patient volumes and
+                        international expansion needs.</p>
                 </div>
             </div>
         </div>
@@ -1463,68 +1190,88 @@
     <!-- Solution Overview Section -->
     <section class="py-24 px-6 bg-section-bg">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl md:text-4xl font-bold mb-6 text-dark-secondary relative">
+            <h2 class="text-4xl md:text-4xl font-bold mb-6 text-[#D4A74A] relative">
                 HeyDoctor: Transforming Healthcare Delivery
                 <div class="w-24 h-1 bg-accent-gold mx-auto mt-4 rounded-full"></div>
             </h2>
             <p class="text-lg md:text-lg mb-16 text-text-primary max-w-5xl mx-auto font-medium leading-relaxed">
-                HeyDoctor revolutionizes telehealth with a comprehensive, secure platform designed for modern healthcare providers. Streamline operations, enhance patient care, and scale your practice globally with our integrated solution.
+                HeyDoctor revolutionizes telehealth with a comprehensive, secure platform designed for modern healthcare
+                providers. Streamline operations, enhance patient care, and scale your practice globally with our
+                integrated solution.
             </p>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
+                <div
+                    class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <div
+                            class="w-10 h-10 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                             <i class="fas fa-hospital-alt text-base text-white"></i>
                         </div>
-                        <h3 class="font-bold text-lg text-text-primary">All-in-One Platform</h3>
+                        <h3 class="font-bold text-lg text-[#D4A74A]">All-in-One Platform</h3>
                     </div>
-                    <p class="text-base text-text-medium leading-relaxed">Unified solution for patients, doctors, and clinics worldwide, eliminating the need for multiple disconnected tools.</p>
+                    <p class="text-base text-text-medium leading-relaxed">Unified solution for patients, doctors, and
+                        clinics worldwide, eliminating the need for multiple disconnected tools.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
+                <div
+                    class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <div
+                            class="w-10 h-10 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                             <i class="fas fa-shield-alt text-base text-white"></i>
                         </div>
-                        <h3 class="font-bold text-lg text-text-primary">Secure Teleconsultations</h3>
+                        <h3 class="font-bold text-lg text-[#D4A74A]">Secure Teleconsultations</h3>
                     </div>
-                    <p class="text-base text-text-medium leading-relaxed">End-to-end encrypted video and phone consultations with enterprise-grade security and compliance.</p>
+                    <p class="text-base text-text-medium leading-relaxed">End-to-end encrypted video and phone
+                        consultations with enterprise-grade security and compliance.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
+                <div
+                    class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <div
+                            class="w-10 h-10 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                             <i class="fas fa-file-medical text-base text-white"></i>
                         </div>
-                        <h3 class="font-bold text-lg text-text-primary">Automated Workflows</h3>
+                        <h3 class="font-bold text-lg text-[#D4A74A]">Automated Workflows</h3>
                     </div>
-                    <p class="text-base text-text-medium leading-relaxed">Prescriptions, invoices, and certificates generated automatically, saving hours of administrative work.</p>
+                    <p class="text-base text-text-medium leading-relaxed">Prescriptions, invoices, and certificates
+                        generated automatically, saving hours of administrative work.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
+                <div
+                    class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <div
+                            class="w-10 h-10 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                             <i class="fas fa-chart-line text-base text-white"></i>
                         </div>
-                        <h3 class="font-bold text-lg text-text-primary">Real-Time Analytics</h3>
+                        <h3 class="font-bold text-lg text-[#D4A74A]">Real-Time Analytics</h3>
                     </div>
-                    <p class="text-base text-text-medium leading-relaxed">Data-driven insights and reporting for better clinical decision-making and practice optimization.</p>
+                    <p class="text-base text-text-medium leading-relaxed">Data-driven insights and reporting for better
+                        clinical decision-making and practice optimization.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
+                <div
+                    class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <div
+                            class="w-10 h-10 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                             <i class="fas fa-link text-base text-white"></i>
                         </div>
-                        <h3 class="font-bold text-lg text-text-primary">Seamless Integrations</h3>
+                        <h3 class="font-bold text-lg text-[#D4A74A]">Seamless Integrations</h3>
                     </div>
-                    <p class="text-base text-text-medium leading-relaxed">Fully integrated with Stripe, ScriptPad, Office 365, and major EHR systems for unified workflows.</p>
+                    <p class="text-base text-text-medium leading-relaxed">Fully integrated with Stripe, ScriptPad,
+                        Office 365, and major EHR systems for unified workflows.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
+                <div
+                    class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-gold">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <div
+                            class="w-10 h-10 bg-dark-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                             <i class="fas fa-globe text-base text-white"></i>
                         </div>
-                        <h3 class="font-bold text-lg text-text-primary">Global Compliance</h3>
+                        <h3 class="font-bold text-lg text-[#D4A74A]">Global Compliance</h3>
                     </div>
-                    <p class="text-base text-text-medium leading-relaxed">Meets international healthcare standards including HIPAA, GDPR, and local regulations worldwide.</p>
+                    <p class="text-base text-text-medium leading-relaxed">Meets international healthcare standards
+                        including HIPAA, GDPR, and local regulations worldwide.</p>
                 </div>
             </div>
             <div class="mt-16">
@@ -1536,13 +1283,19 @@
     <!-- Powerful Features Section -->
     <section class="py-24 px-6">
         <div class="max-w-7xl mx-auto features-container">
-            <div class="features-header">
-                <h2>Powerful Features for Modern Healthcare</h2>
-                <p>Everything you need to manage your healthcare practice efficiently, from appointment booking to patient care delivery.</p>
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4" style="color: #D4A74A;">
+                    Powerful Features for Modern Healthcare
+                </h2>
+                <div class="w-24 h-1 bg-accent-gold mx-auto mb-2 rounded-full"></div>
+                <p class="mb-4" style="color: #2B2135;">
+                    Everything you need to manage your healthcare practice efficiently, from <br>appointment booking to
+                    patient care delivery.
+                </p>
             </div>
 
             <!-- Feature Categories -->
-            <div class="space-y-16">
+            <div class="space-y-4">
                 <!-- Appointment & Booking Management -->
                 <div class="feature-category">
                     <h3><i class="fas fa-calendar-alt mr-3"></i>Appointment & Booking Management</h3>
@@ -1565,7 +1318,8 @@
                             <div class="feature-icon"><i class="fas fa-users"></i></div>
                             <div class="feature-content">
                                 <h4>Waitlist Management</h4>
-                                <p>Intelligent waitlist system with automatic notifications when slots become available</p>
+                                <p>Intelligent waitlist system with automatic notifications when slots become available
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1607,7 +1361,8 @@
                             <div class="feature-icon"><i class="fas fa-id-card"></i></div>
                             <div class="feature-content">
                                 <h4>Digital Health Records</h4>
-                                <p>Comprehensive patient profiles with medical history, allergies, and treatment plans</p>
+                                <p>Comprehensive patient profiles with medical history, allergies, and treatment plans
+                                </p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -1719,65 +1474,143 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="py-24 px-6 bg-section-bg">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-text-primary">Choose the Perfect Plan for Your Practice</h2>
-                <p class="text-lg text-text-medium max-w-3xl mx-auto">Flexible pricing designed to scale with your healthcare practice. Start small and grow big with HeyDoctor.</p>
+    <section class="py-16 px-6 bg-section-bg">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-text-primary">Telehealth Solution Packages</h2>
+            <p class="text-lg text-text-medium max-w-3xl mx-auto">Our Telehealth Solution is designed to provide a
+                seamless virtual healthcare experience for clinics, doctors, and patients. With a range of powerful
+                modules, we ensure secure, efficient, and effective remote consultations, billing, and patient
+                management.</p>
+        </div>
+<section class="flex flex-col md:flex-row gap-6 items-stretch py-16 px-6 bg-section-bg"> 
+        <div>
+            <!-- Starter Package -->
+            <div class="bg-white shadow-lg rounded-2xl p-8 border">
+                <h3 class="text-xl font-bold mb-4 text-text-primary">Starter</h3>
+                <p class="text-text-medium mb-6">Perfect for individual practitioners</p>
+
+                <div class="text-3xl font-bold mb-6 text-dark-secondary">AUD $4500</div>
+
+                <ul class="text-left space-y-3 mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>User Management
+                        (Admin, Doctor, Patient)</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Appointments
+                        Management</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Doctor Roster</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Patient Invoices
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Stripe integration
+                        for payment</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Clinical Report</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Medical Certificate
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Office 365 Email
+                        Integration</li>
+                </ul>
+
+                <button
+                    class="w-full bg-dark-secondary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary transition">
+                    Get Started
+                </button>
             </div>
+        </div>
+        <div>
 
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Starter Plan -->
-                <div class="pricing-card">
-                    <h3 class="text-xl font-bold mb-4 text-text-primary">Starter</h3>
-                    <p class="text-text-medium mb-6">Perfect for solo practitioners and small clinics</p>
-                    <div class="pricing-price">$29<span>/month</span></div>
-                    <ul class="text-left space-y-3 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Up to 50 patients</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Basic video consultations</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Appointment scheduling</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Basic reporting</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Email support</li>
-                    </ul>
-                    <button class="w-full bg-dark-secondary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary transition-colors">Get Starter Package</button>
-                </div>
+            <!-- Professional Package -->
+            <div class="bg-white shadow-lg rounded-2xl p-8 border">
+                <h3 class="text-xl font-bold mb-4 text-text-primary">Enterprise</h3>
+                <p class="text-text-medium mb-6">For large healthcare networks</p>
 
-                <!-- Professional Plan -->
-                <div class="pricing-card popular">
-                    <h3 class="text-xl font-bold mb-4 text-text-primary">Professional</h3>
-                    <p class="text-text-medium mb-6">Ideal for growing clinics and medical groups</p>
-                    <div class="pricing-price">$99<span>/month</span></div>
-                    <ul class="text-left space-y-3 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Up to 500 patients</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Advanced video & phone calls</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Multi-doctor management</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Advanced analytics</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Priority support</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Custom integrations</li>
-                    </ul>
-                    <button class="w-full bg-accent-gold text-white py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">Schedule Demo</button>
-                </div>
+                <div class="text-3xl font-bold mb-6 text-dark-secondary">AUD $10000</div>
 
-                <!-- Enterprise Plan -->
-                <div class="pricing-card">
-                    <h3 class="text-xl font-bold mb-4 text-text-primary">Enterprise</h3>
-                    <p class="text-text-medium mb-6">For large healthcare networks and hospitals</p>
-                    <div class="pricing-price">Custom<span> pricing</span></div>
-                    <ul class="text-left space-y-3 mb-8">
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Unlimited patients</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>White-label solution</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>API access</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Dedicated account manager</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>24/7 phone support</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>On-premise deployment</li>
-                    </ul>
-                    <button class="w-full bg-dark-secondary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary transition-colors">Contact Sales</button>
-                </div>
+                <ul class="text-left space-y-3 mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>User Management
+                        (Admin, Doctor, Patient)</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Appointments
+                        Management</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Doctor Roster</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Patient Invoices
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Stripe integration
+                        for payment</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Clinical Report</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Medical Certificate
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Office 365 Email
+                        Integration</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Referral Form</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Path Form</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Radiology Form</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Resources Material
+                        for admin staff and doctor</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Doctor Invoice and
+                        billing management</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Activity Logs</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Reports</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>GP contacts
+                        management</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Email Templates</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Patient Prescription
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Video calling for
+                        booking</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Website booking</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>SMS API integration
+                    </li>
+                </ul>
+
+                <button
+                    class="w-full bg-accent-gold text-white py-3 px-6 rounded-lg font-semibold hover:bg-yellow-600 transition">
+                    Schedule Demo
+                </button>
             </div>
+        </div>
+        <!-- grid md:grid-cols-3 gap-8 max-w-6xl mx-auto -->
+        <div>
+            <!-- Enterprise Package -->
+            <div class="bg-white shadow-lg rounded-2xl p-8 border">
+                <h3 class="text-xl font-bold mb-4 text-text-primary">Professional</h3>
+                <p class="text-text-medium mb-6">Ideal for clinics and medical groups</p>
 
-            <div class="text-center mt-12">
-                <p class="text-text-medium">All plans include 30-day free trial • No setup fees • Cancel anytime</p>
+                <div class="text-3xl font-bold mb-6 text-dark-secondary">AUD $7500</div>
+
+                <ul class="text-left space-y-3 mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>User Management
+                        (Admin, Doctor, Patient)</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Appointments
+                        Management</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Doctor Roster</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Patient Invoices
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Stripe integration
+                        for payment</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Clinical Report</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Medical Certificate
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Office 365 Email
+                        Integration</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Referral Form</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Path Form</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Radiology Form</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Resources Material
+                        for admin staff and doctor</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Doctor Invoice and
+                        billing management</li>
+                    <li class="flex items-center"><i class="fas fa-check text-accent-teal mr-3"></i>Activity Logs</li>
+                   
+                </ul>
+
+                <button
+                    class="w-full bg-dark-secondary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary transition">
+                    Contact Sales
+                </button>
             </div>
+        </div>
+    </section>
+
+        <div class="text-center mt-12">
+            <p class="text-lg text-text-primary font-medium leading-relaxed">All packages include setup and training •
+                Secure cloud hosting • 24/7 technical support</p>
         </div>
     </section>
 
@@ -1786,7 +1619,8 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-text-primary">How HeyDoctor Works</h2>
-                <p class="text-lg text-text-medium max-w-3xl mx-auto">Experience seamless telehealth consultations from start to finish with our streamlined workflow.</p>
+                <p class="text-lg text-text-medium max-w-3xl mx-auto">Experience seamless telehealth consultations from
+                    start to finish with our streamlined workflow.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -1794,7 +1628,8 @@
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <h3 class="text-xl font-bold mb-4 text-text-primary">Patient Books Online</h3>
-                    <p class="text-text-medium">Patients easily book appointments through your website or patient portal with 24/7 availability and instant confirmation.</p>
+                    <p class="text-text-medium">Patients easily book appointments through your website or patient portal
+                        with 24/7 availability and instant confirmation.</p>
                     <div class="mt-6">
                         <i class="fas fa-calendar-check text-3xl text-accent-teal"></i>
                     </div>
@@ -1804,7 +1639,8 @@
                 <div class="step-card">
                     <div class="step-number">2</div>
                     <h3 class="text-xl font-bold mb-4 text-text-primary">Doctor Receives Request</h3>
-                    <p class="text-text-medium">You get notified instantly and can review patient details, medical history, and consultation preferences before starting.</p>
+                    <p class="text-text-medium">You get notified instantly and can review patient details, medical
+                        history, and consultation preferences before starting.</p>
                     <div class="mt-6">
                         <i class="fas fa-user-md text-3xl text-accent-teal"></i>
                     </div>
@@ -1814,7 +1650,8 @@
                 <div class="step-card">
                     <div class="step-number">3</div>
                     <h3 class="text-xl font-bold mb-4 text-text-primary">Secure Consultation</h3>
-                    <p class="text-text-medium">Conduct high-quality video or audio consultations with automatic prescription generation, medical certificates, and billing.</p>
+                    <p class="text-text-medium">Conduct high-quality video or audio consultations with automatic
+                        prescription generation, medical certificates, and billing.</p>
                     <div class="mt-6">
                         <i class="fas fa-video text-3xl text-accent-teal"></i>
                     </div>
@@ -1824,7 +1661,8 @@
                 <div class="step-card">
                     <div class="step-number">4</div>
                     <h3 class="text-xl font-bold mb-4 text-text-primary">Documents Delivered</h3>
-                    <p class="text-text-medium">Patients instantly access secure, downloadable prescriptions, invoices, and medical certificates through their patient portal.</p>
+                    <p class="text-text-medium">Patients instantly access secure, downloadable prescriptions, invoices,
+                        and medical certificates through their patient portal.</p>
                     <div class="mt-6">
                         <i class="fas fa-file-medical text-3xl text-accent-teal"></i>
                     </div>
@@ -1837,25 +1675,31 @@
                     <h3 class="text-2xl font-bold mb-6 text-text-primary">The Complete Telehealth Experience</h3>
                     <div class="grid md:grid-cols-3 gap-8 text-left">
                         <div class="text-center">
-                            <div class="w-16 h-16 bg-accent-peach rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div
+                                class="w-16 h-16 bg-accent-peach rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i class="fas fa-mobile-alt text-2xl text-white"></i>
                             </div>
                             <h4 class="font-semibold mb-2">Patient Portal</h4>
-                            <p class="text-sm text-text-medium">Easy booking, secure document access, payment processing</p>
+                            <p class="text-sm text-text-medium">Easy booking, secure document access, payment processing
+                            </p>
                         </div>
                         <div class="text-center">
-                            <div class="w-16 h-16 bg-accent-teal rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div
+                                class="w-16 h-16 bg-accent-teal rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i class="fas fa-shield-alt text-2xl text-white"></i>
                             </div>
                             <h4 class="font-semibold mb-2">Secure Platform</h4>
-                            <p class="text-sm text-text-medium">HIPAA compliant, encrypted consultations, data protection</p>
+                            <p class="text-sm text-text-medium">HIPAA compliant, encrypted consultations, data
+                                protection</p>
                         </div>
                         <div class="text-center">
-                            <div class="w-16 h-16 bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div
+                                class="w-16 h-16 bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i class="fas fa-cogs text-2xl text-white"></i>
                             </div>
                             <h4 class="font-semibold mb-2">Automation</h4>
-                            <p class="text-sm text-text-medium">Auto prescriptions, invoices, reminders, and follow-ups</p>
+                            <p class="text-sm text-text-medium">Auto prescriptions, invoices, reminders, and follow-ups
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1867,21 +1711,26 @@
     <section class="py-24 px-6 bg-section-bg">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-text-primary">Trusted by Healthcare Professionals Worldwide</h2>
-                <p class="text-lg text-text-medium max-w-3xl mx-auto">See what doctors, clinics, and patients say about their experience with HeyDoctor.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-text-primary">Trusted by Healthcare Professionals
+                    Worldwide</h2>
+                <p class="text-lg text-text-medium max-w-3xl mx-auto">See what doctors, clinics, and patients say about
+                    their experience with HeyDoctor.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Dr. Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Dr. Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-text-primary">Dr. Sarah Johnson</h4>
                             <p class="text-sm text-text-medium">Family Medicine, New York</p>
                         </div>
                     </div>
-                    <p class="text-text-primary italic mb-4">"HeyDoctor transformed my practice overnight. Patient bookings increased by 40%, and I can now see patients from anywhere. The automated prescription system saves me hours each week."</p>
+                    <p class="text-text-primary italic mb-4">"HeyDoctor transformed my practice overnight. Patient
+                        bookings increased by 40%, and I can now see patients from anywhere. The automated prescription
+                        system saves me hours each week."</p>
                     <div class="flex text-accent-gold">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -1894,13 +1743,16 @@
                 <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Dr. Michael Chen" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Dr. Michael Chen" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-text-primary">Dr. Michael Chen</h4>
                             <p class="text-sm text-text-medium">Cardiologist, London</p>
                         </div>
                     </div>
-                    <p class="text-text-primary italic mb-4">"The security and compliance features are outstanding. HeyDoctor meets all our HIPAA requirements while providing an intuitive interface for both doctors and patients."</p>
+                    <p class="text-text-primary italic mb-4">"The security and compliance features are outstanding.
+                        HeyDoctor meets all our HIPAA requirements while providing an intuitive interface for both
+                        doctors and patients."</p>
                     <div class="flex text-accent-gold">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -1913,13 +1765,16 @@
                 <!-- Testimonial 3 -->
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1594824804732-ca8db723f8fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Maria Rodriguez" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Maria Rodriguez" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-text-primary">Maria Rodriguez</h4>
                             <p class="text-sm text-text-medium">Clinic Manager, Barcelona</p>
                         </div>
                     </div>
-                    <p class="text-text-primary italic mb-4">"Our clinic serves 200+ patients weekly now. The billing integration and automated workflows have reduced our administrative workload by 60%. Exceptional ROI."</p>
+                    <p class="text-text-primary italic mb-4">"Our clinic serves 200+ patients weekly now. The billing
+                        integration and automated workflows have reduced our administrative workload by 60%. Exceptional
+                        ROI."</p>
                     <div class="flex text-accent-gold">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -1932,13 +1787,16 @@
                 <!-- Testimonial 4 -->
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Dr. Ahmed Hassan" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Dr. Ahmed Hassan" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-text-primary">Dr. Ahmed Hassan</h4>
                             <p class="text-sm text-text-medium">Pediatrician, Dubai</p>
                         </div>
                     </div>
-                    <p class="text-text-primary italic mb-4">"Perfect for international practice. I can consult with patients across time zones, and the platform handles all language preferences and cultural considerations seamlessly."</p>
+                    <p class="text-text-primary italic mb-4">"Perfect for international practice. I can consult with
+                        patients across time zones, and the platform handles all language preferences and cultural
+                        considerations seamlessly."</p>
                     <div class="flex text-accent-gold">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -1951,13 +1809,16 @@
                 <!-- Testimonial 5 -->
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1551601651-5a36ebe230b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Jennifer Park" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Jennifer Park" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-text-primary">Jennifer Park</h4>
                             <p class="text-sm text-text-medium">Patient, Sydney</p>
                         </div>
                     </div>
-                    <p class="text-text-primary italic mb-4">"As a busy parent, telehealth with HeyDoctor is a lifesaver. No waiting rooms, instant prescriptions, and I can consult from home. The doctors are just as thorough virtually."</p>
+                    <p class="text-text-primary italic mb-4">"As a busy parent, telehealth with HeyDoctor is a
+                        lifesaver. No waiting rooms, instant prescriptions, and I can consult from home. The doctors are
+                        just as thorough virtually."</p>
                     <div class="flex text-accent-gold">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -1970,13 +1831,16 @@
                 <!-- Testimonial 6 -->
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="City Medical Center" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="City Medical Center" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-text-primary">City Medical Center</h4>
                             <p class="text-sm text-text-medium">Multi-specialty Clinic, Toronto</p>
                         </div>
                     </div>
-                    <p class="text-text-primary italic mb-4">"HeyDoctor's enterprise features scaled perfectly with our 50-doctor network. The analytics dashboard helps us optimize operations and improve patient outcomes across all departments."</p>
+                    <p class="text-text-primary italic mb-4">"HeyDoctor's enterprise features scaled perfectly with our
+                        50-doctor network. The analytics dashboard helps us optimize operations and improve patient
+                        outcomes across all departments."</p>
                     <div class="flex text-accent-gold">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -1987,15 +1851,58 @@
                 </div>
             </div>
 
-            <!-- Partner Logos -->
+            <!-- Trusted Partners -->
             <div class="text-center">
-                <h3 class="text-xl font-semibold mb-8 text-text-primary">Trusted by Leading Healthcare Institutions</h3>
-                <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
-                    <div class="text-2xl font-bold text-text-primary">🏥 City Hospital</div>
-                    <div class="text-2xl font-bold text-text-primary">🏥 Medical Center Plus</div>
-                    <div class="text-2xl font-bold text-text-primary">🏥 PrimeCare Clinics</div>
-                    <div class="text-2xl font-bold text-text-primary">🏥 HealthFirst Network</div>
-                    <div class="text-2xl font-bold text-text-primary">🏥 Global Medical Group</div>
+                <h3 class="text-2xl md:text-3xl font-bold mb-12 text-text-primary">Trusted by Leading Healthcare Institutions</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+                    <div class="partner-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-teal">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent-teal to-teal-600 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-hospital text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-text-primary text-sm md:text-base">City Hospital</h4>
+                            <p class="text-xs text-text-medium mt-1">500+ Beds</p>
+                        </div>
+                    </div>
+                    <div class="partner-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-teal">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent-gold to-yellow-600 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-clinic-medical text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-text-primary text-sm md:text-base">Medical Center Plus</h4>
+                            <p class="text-xs text-text-medium mt-1">Multi-specialty</p>
+                        </div>
+                    </div>
+                    <div class="partner-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-teal">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-purple-600 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-stethoscope text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-text-primary text-sm md:text-base">PrimeCare Clinics</h4>
+                            <p class="text-xs text-text-medium mt-1">25 Locations</p>
+                        </div>
+                    </div>
+                    <div class="partner-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-teal">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent-teal to-teal-600 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-heartbeat text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-text-primary text-sm md:text-base">HealthFirst Network</h4>
+                            <p class="text-xs text-text-medium mt-1">Regional Network</p>
+                        </div>
+                    </div>
+                    <div class="partner-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-teal md:col-span-2 lg:col-span-1">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent-gold to-yellow-600 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-globe text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-text-primary text-sm md:text-base">Global Medical Group</h4>
+                            <p class="text-xs text-text-medium mt-1">International</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <p class="text-lg text-text-primary font-medium">And 500+ other healthcare providers worldwide</p>
                 </div>
             </div>
         </div>
@@ -2006,7 +1913,8 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-text-primary">Seamless Integrations</h2>
-                <p class="text-lg text-text-medium max-w-3xl mx-auto">HeyDoctor integrates with your existing tools and systems, creating a unified healthcare ecosystem that works the way you do.</p>
+                <p class="text-lg text-text-medium max-w-3xl mx-auto">HeyDoctor integrates with your existing tools and
+                    systems, creating a unified healthcare ecosystem that works the way you do.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -2016,7 +1924,8 @@
                         <i class="fab fa-stripe text-purple-600"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-3 text-text-primary">Stripe Payments</h3>
-                    <p class="text-text-medium">Secure payment processing with automated invoicing, subscription management, and multi-currency support for global practices.</p>
+                    <p class="text-text-medium">Secure payment processing with automated invoicing, subscription
+                        management, and multi-currency support for global practices.</p>
                 </div>
 
                 <!-- ScriptPad Integration -->
@@ -2025,7 +1934,8 @@
                         <i class="fas fa-prescription-bottle-alt text-blue-600"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-3 text-text-primary">ScriptPad</h3>
-                    <p class="text-text-medium">Electronic prescription management with real-time medication database, controlled substance tracking, and direct pharmacy delivery.</p>
+                    <p class="text-text-medium">Electronic prescription management with real-time medication database,
+                        controlled substance tracking, and direct pharmacy delivery.</p>
                 </div>
 
                 <!-- Office 365 Integration -->
@@ -2034,7 +1944,8 @@
                         <i class="fab fa-microsoft text-blue-500"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-3 text-text-primary">Office 365</h3>
-                    <p class="text-text-medium">Seamless email integration, calendar sync, and document management with Microsoft Teams collaboration tools.</p>
+                    <p class="text-text-medium">Seamless email integration, calendar sync, and document management with
+                        Microsoft Teams collaboration tools.</p>
                 </div>
 
                 <!-- Daily.co Integration -->
@@ -2043,7 +1954,8 @@
                         <i class="fas fa-video text-green-600"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-3 text-text-primary">Daily.co</h3>
-                    <p class="text-text-medium">High-quality video calling platform with screen sharing, recording, and mobile-optimized consultations.</p>
+                    <p class="text-text-medium">High-quality video calling platform with screen sharing, recording, and
+                        mobile-optimized consultations.</p>
                 </div>
 
                 <!-- Google Maps Integration -->
@@ -2052,7 +1964,8 @@
                         <i class="fab fa-google text-red-500"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-3 text-text-primary">Google Maps</h3>
-                    <p class="text-text-medium">Location services for patient addresses, appointment directions, and geographic-based service areas.</p>
+                    <p class="text-text-medium">Location services for patient addresses, appointment directions, and
+                        geographic-based service areas.</p>
                 </div>
 
                 <!-- EHR Integration -->
@@ -2061,7 +1974,8 @@
                         <i class="fas fa-database text-indigo-600"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-3 text-text-primary">Major EHR Systems</h3>
-                    <p class="text-text-medium">Connect with Epic, Cerner, NextGen, and other leading electronic health record systems for comprehensive patient data.</p>
+                    <p class="text-text-medium">Connect with Epic, Cerner, NextGen, and other leading electronic health
+                        record systems for comprehensive patient data.</p>
                 </div>
             </div>
 
@@ -2077,7 +1991,8 @@
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle text-accent-teal mt-1 mr-3"></i>
-                                <span class="text-text-medium">Maintain compliance with HIPAA and other regulations</span>
+                                <span class="text-text-medium">Maintain compliance with HIPAA and other
+                                    regulations</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle text-accent-teal mt-1 mr-3"></i>
@@ -2100,20 +2015,22 @@
             </div>
 
             <div class="text-center mt-12">
-                <p class="text-text-medium">Need a custom integration? <a href="#" class="text-accent-teal hover:underline font-semibold">Contact our development team</a></p>
+                <p class="text-text-medium">Need a custom integration? <a href="#"
+                        class="text-accent-teal hover:underline font-semibold">Contact our development team</a></p>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto">
+    <section class="py-24 px-6 bg-section-bg">
+        <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-text-primary">Frequently Asked Questions</h2>
-                <p class="text-lg text-text-medium">Everything you need to know about HeyDoctor telehealth platform</p>
+                <p class="text-lg text-text-medium max-w-3xl mx-auto">Everything you need to know about HeyDoctor telehealth platform</p>
+                <div class="w-24 h-1 bg-accent-gold mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <div class="space-y-4">
+            <div class="space-y-3">
                 <!-- FAQ 1 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
@@ -2121,7 +2038,10 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>HeyDoctor employs enterprise-grade security with end-to-end encryption for all video calls, data transmission, and storage. We are fully HIPAA compliant and regularly undergo independent security audits. All data is encrypted at rest and in transit using industry-standard protocols.</p>
+                        <p>HeyDoctor employs enterprise-grade security with end-to-end encryption for all video calls,
+                            data transmission, and storage. We are fully HIPAA compliant and regularly undergo
+                            independent security audits. All data is encrypted at rest and in transit using
+                            industry-standard protocols.</p>
                     </div>
                 </div>
 
@@ -2132,7 +2052,9 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Our 30-day free trial includes full access to all premium features, unlimited consultations, all integrations, and dedicated onboarding support. No credit card is required to start, and you can cancel anytime during the trial period.</p>
+                        <p>Our 30-day free trial includes full access to all premium features, unlimited consultations,
+                            all integrations, and dedicated onboarding support. No credit card is required to start, and
+                            you can cancel anytime during the trial period.</p>
                     </div>
                 </div>
 
@@ -2143,7 +2065,9 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes! HeyDoctor integrates with all major EHR systems including Epic, Cerner, NextGen, and many others. Our API-first architecture allows for custom integrations with any healthcare software. Contact our team for specific integration requirements.</p>
+                        <p>Yes! HeyDoctor integrates with all major EHR systems including Epic, Cerner, NextGen, and
+                            many others. Our API-first architecture allows for custom integrations with any healthcare
+                            software. Contact our team for specific integration requirements.</p>
                     </div>
                 </div>
 
@@ -2154,7 +2078,9 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>HeyDoctor integrates with Stripe for secure payment processing. You can set up automated invoicing, accept payments in multiple currencies, and manage subscriptions. Patients can pay directly through the platform, and all transactions are PCI compliant.</p>
+                        <p>HeyDoctor integrates with Stripe for secure payment processing. You can set up automated
+                            invoicing, accept payments in multiple currencies, and manage subscriptions. Patients can
+                            pay directly through the platform, and all transactions are PCI compliant.</p>
                     </div>
                 </div>
 
@@ -2165,7 +2091,9 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>We offer 24/7 technical support with dedicated account managers for enterprise clients. Our support includes phone, email, and live chat assistance, plus comprehensive documentation and video tutorials.</p>
+                        <p>We offer 24/7 technical support with dedicated account managers for enterprise clients. Our
+                            support includes phone, email, and live chat assistance, plus comprehensive documentation
+                            and video tutorials.</p>
                     </div>
                 </div>
 
@@ -2176,7 +2104,9 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, HeyDoctor supports international telemedicine. We comply with global healthcare regulations including GDPR in Europe and local regulations worldwide. Patients can book appointments across time zones, and we support multiple languages and currencies.</p>
+                        <p>Yes, HeyDoctor supports international telemedicine. We comply with global healthcare
+                            regulations including GDPR in Europe and local regulations worldwide. Patients can book
+                            appointments across time zones, and we support multiple languages and currencies.</p>
                     </div>
                 </div>
 
@@ -2187,18 +2117,24 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Our ScriptPad integration automatically generates prescriptions during consultations. Doctors can select medications from a comprehensive database, and prescriptions are securely delivered to patients and pharmacies electronically. This eliminates manual paperwork and reduces errors.</p>
+                        <p>Our ScriptPad integration automatically generates prescriptions during consultations. Doctors
+                            can select medications from a comprehensive database, and prescriptions are securely
+                            delivered to patients and pharmacies electronically. This eliminates manual paperwork and
+                            reduces errors.</p>
                     </div>
                 </div>
 
                 <!-- FAQ 8 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
-                        <span class="font-semibold">What happens if there's a technical issue during a consultation?</span>
+                        <span class="font-semibold">What happens if there's a technical issue during a
+                            consultation?</span>
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Our platform includes automatic failover systems and backup communication channels. If video fails, consultations can continue via phone or chat. We maintain 99.9% uptime and have dedicated technical support available during all consultation hours.</p>
+                        <p>Our platform includes automatic failover systems and backup communication channels. If video
+                            fails, consultations can continue via phone or chat. We maintain 99.9% uptime and have
+                            dedicated technical support available during all consultation hours.</p>
                     </div>
                 </div>
 
@@ -2209,7 +2145,9 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely! HeyDoctor offers extensive customization options including branding, workflows, templates, and custom integrations. Enterprise clients get white-label solutions and dedicated development support for specific requirements.</p>
+                        <p>Absolutely! HeyDoctor offers extensive customization options including branding, workflows,
+                            templates, and custom integrations. Enterprise clients get white-label solutions and
+                            dedicated development support for specific requirements.</p>
                     </div>
                 </div>
 
@@ -2220,7 +2158,9 @@
                         <i class="fas fa-chevron-down faq-toggle"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Most clinics are up and running within 1-2 weeks. Our dedicated onboarding team handles data migration, staff training, and integration setup. Enterprise implementations may take 4-6 weeks depending on complexity.</p>
+                        <p>Most clinics are up and running within 1-2 weeks. Our dedicated onboarding team handles data
+                            migration, staff training, and integration setup. Enterprise implementations may take 4-6
+                            weeks depending on complexity.</p>
                     </div>
                 </div>
             </div>
@@ -2239,7 +2179,8 @@
                 <!-- Left Side - Content -->
                 <div class="text-white">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Healthcare Practice?</h2>
-                    <p class="text-xl mb-8 text-light-secondary">Join over 500 clinics worldwide who've revolutionized their telehealth experience with HeyDoctor. Start your free trial today.</p>
+                    <p class="text-xl mb-8 text-light-secondary">Join over 500 clinics worldwide who've revolutionized
+                        their telehealth experience with HeyDoctor. Start your free trial today.</p>
 
                     <div class="space-y-4 mb-8">
                         <div class="flex items-center">
@@ -2261,8 +2202,11 @@
                     </div>
 
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="cta-button bg-accent-teal hover:bg-teal-600 border-accent-teal hover:border-teal-600" onclick="scrollToDemo()">Book a Demo Today</button>
-                        <button class="secondary-cta bg-white text-dark-secondary hover:bg-gray-100 border-white" onclick="scrollToConsultation()">Schedule Consultation</button>
+                        <button
+                            class="cta-button bg-accent-teal hover:bg-teal-600 border-accent-teal hover:border-teal-600"
+                            onclick="scrollToDemo()">Book a Demo Today</button>
+                        <button class="secondary-cta bg-white text-dark-secondary hover:bg-gray-100 border-white"
+                            onclick="scrollToConsultation()">Schedule Consultation</button>
                     </div>
                 </div>
 
@@ -2300,12 +2244,15 @@
                                 <option value="consultation">Schedule Consultation</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full bg-accent-teal text-white py-4 px-6 rounded-lg font-semibold hover:bg-teal-600 transition-colors">
+                        <button type="submit"
+                            class="w-full bg-accent-teal text-white py-4 px-6 rounded-lg font-semibold hover:bg-teal-600 transition-colors">
                             Get Started Now
                         </button>
                     </form>
                     <p class="text-xs text-text-medium text-center mt-4">
-                        By submitting this form, you agree to our <a href="#" class="text-accent-teal hover:underline">Privacy Policy</a> and <a href="#" class="text-accent-teal hover:underline">Terms of Service</a>.
+                        By submitting this form, you agree to our <a href="#"
+                            class="text-accent-teal hover:underline">Privacy Policy</a> and <a href="#"
+                            class="text-accent-teal hover:underline">Terms of Service</a>.
                     </p>
                 </div>
             </div>
@@ -2335,97 +2282,137 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="dark-section py-24 px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Healthcare Practice?</h2>
-            <p class="text-lg md:text-xl mb-10 text-light-secondary max-w-3xl mx-auto">
-                Join thousands of healthcare providers worldwide using HeyDoctor to deliver exceptional virtual care and streamline operations.
+    <section class="dark-section py-24 px-6 relative">
+        <!-- Subtle background pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #7E5D98 1px, transparent 1px), radial-gradient(circle at 75% 75%, #4AAFB8 1px, transparent 1px); background-size: 50px 50px;"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl text-[#5A3E70] lg:text-5xl font-bold mb-8 leading-tight">
+                Ready to Transform Your<br>
+                <span class="text-accent-teal">Healthcare Practice?</span>
+            </h2>
+
+            <p class="text-lg md:text-xl mb-12 text-light-secondary max-w-3xl mx-auto leading-relaxed">
+                Join thousands of healthcare providers worldwide using HeyDoctor to deliver exceptional virtual care and
+                streamline operations.
             </p>
-            <div class="flex flex-col sm:flex-row gap-8 justify-center">
-                <button class="cta-button">Book a Demo</button>
-                <button class="secondary-cta">Contact Sales</button>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                <button class="cta-button bg-accent-teal hover:bg-teal-600 border-accent-teal hover:border-teal-600 text-lg px-8 py-4">
+                    Book a Demo
+                </button>
+                <button class="secondary-cta text-lg px-8 py-4">
+                    Contact Sales
+                </button>
             </div>
-            <p class="mt-12 text-xl text-light-secondary">✨ No credit card required • 30-day free trial • Cancel anytime • Global support</p>
+
+            <!-- Trust indicators with better structure -->
+            <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="flex flex-col items-center p-4 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <i class="fas fa-credit-card text-accent-gold text-xl mb-2"></i>
+                    <span class="text-sm text-light-secondary font-medium">No credit card required</span>
+                </div>
+                <div class="flex flex-col items-center p-4 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <i class="fas fa-calendar-alt text-accent-teal text-xl mb-2"></i>
+                    <span class="text-sm text-light-secondary font-medium">30-day free trial</span>
+                </div>
+                <div class="flex flex-col items-center p-4 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <i class="fas fa-times-circle text-accent-peach text-xl mb-2"></i>
+                    <span class="text-sm text-light-secondary font-medium">Cancel anytime</span>
+                </div>
+                <div class="flex flex-col items-center p-4 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <i class="fas fa-globe text-accent-gold text-xl mb-2"></i>
+                    <span class="text-sm text-light-secondary font-medium">Global support</span>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="bg-[#000000] text-white">
         <div class="max-w-7xl mx-auto px-6 py-16" style="font-family: 'Proxima Nova Light', sans-serif;">
-          <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_1.8fr_1fr] gap-8 lg:divide-x lg:divide-gray-700">
-    
-            <!-- Left column -->
-            <div class="px-6">
-              <div class="logo">
-                <a href="#home">
-                  <img class="image-custom height : 50px; w-auto" src="./umer-zafar-logo-1.png" alt="">
-                </a>
-              </div>
-    
-              <nav class="mt-6 grid grid-cols-2 gap-y-2 text-sm">
-                <a href="./index.html" class="text-white hover:text-[#D4A74A] transition-colors duration-300">HOME</a>
-                <a href="#services" class="text-white hover:text-[#D4A74A] transition-colors duration-300">SERVICES</a>
-                <a href="./side.html" class="text-white hover:text-[#D4A74A] transition-colors duration-300">TELEHEALTH
-                  SOFTWARE</a>
-                <a href="#contact" class="text-white hover:text-[#D4A74A] transition-colors duration-300">CONTACT</a>
-              </nav>
-              <p class="mt-6 text-gray-400 text-white">© 2024 Umer Zafar. All Rights Reserved.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_1.8fr_1fr] gap-8 lg:divide-x lg:divide-gray-700">
+
+                <!-- Left column -->
+                <div class="px-6">
+                    <div class="logo">
+                        <a href="#home">
+                            <img class="image-custom height : 50px; w-auto" src="./umer-zafar-logo-1.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="mt-6 grid grid-cols-2 gap-y-2 text-sm">
+                        <a href="./index.html"
+                            class="text-white hover:text-[#D4A74A] transition-colors duration-300">HOME</a>
+                        <a href="#services"
+                            class="text-white hover:text-[#D4A74A] transition-colors duration-300">SERVICES</a>
+                        <a href="./side.html"
+                            class="text-white hover:text-[#D4A74A] transition-colors duration-300">TELEHEALTH
+                            SOFTWARE</a>
+                        <a href="#contact"
+                            class="text-white hover:text-[#D4A74A] transition-colors duration-300">CONTACT</a>
+                    </nav>
+                    <p class="mt-6 text-gray-400 text-white">© 2024 Umer Zafar. All Rights Reserved.</p>
+                </div>
+
+                <!-- Center column -->
+                <div class="px-6 lg:px-12">
+                    <h3 class="text-[#D4A74A] text-xl font-semibold mb-4">ABOUT</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">
+                        With over 10 years of specialized experience in healthcare technologies, I build
+                        high-performance solutions
+                        tailored specifically for the Australian healthcare ecosystem. From Telehealth platforms (ready
+                        to purchase)
+                        to NDIS software, After-Hours triage systems, practice management integration's, and secure data
+                        workflows—every product is built for reliability, compliance, and seamless clinical operations.
+                    </p>
+
+                    <div class="mt-6 flex items-center gap-3">
+                        <a href="https://www.linkedin.com/in/lms-membership-and-learning-community-development-expert/"
+                            class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260]">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://wa.me/923323289918" target="_blank"
+                            class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260]">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://facebook.com/yourpage"
+                            class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260]">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://instagram.com/yourpage"
+                            class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260] transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <!-- Right column -->
+                <div class="px-6 lg:pl-12">
+                    <h3 class="text-[#D4A74A] text-xl font-semibold mb-4">HIRE ME TODAY</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">
+                        Want to discuss your next project? <a href="#contact" class="text-[#D4A74A]">Contact me</a> or
+                        send
+                        message on
+                        <a href="https://wa.me/923323289918" class="text-[#D4A74A]">WhatsApp</a>.
+                    </p>
+
+                    <div class="mt-6">
+                        <a href="#contact"
+                            class="inline-flex items-center bg-[#5A3E70] text-white font-semibold px-5 py-3 rounded border border-white hover:bg-[#fff] hover:text-[#5A3E70] transition">
+                            GET A QUOTE <i class="fas fa-arrow-right ml-3"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-    
-            <!-- Center column -->
-            <div class="px-6 lg:px-12">
-              <h3 class="text-[#D4A74A] text-xl font-semibold mb-4">ABOUT</h3>
-              <p class="text-gray-200 text-sm leading-relaxed">
-                With over 10 years of specialized experience in healthcare technologies, I build high-performance solutions
-                tailored specifically for the Australian healthcare ecosystem. From Telehealth platforms (ready to purchase)
-                to NDIS software, After-Hours triage systems, practice management integration's, and secure data
-                workflows—every product is built for reliability, compliance, and seamless clinical operations.
-              </p>
-    
-              <div class="mt-6 flex items-center gap-3">
-                <a href="https://www.linkedin.com/in/lms-membership-and-learning-community-development-expert/"
-                  class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260]">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-    
-                <a href="https://wa.me/923323289918" target="_blank"
-                  class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260]">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-    
-                <a href="https://facebook.com/yourpage"
-                  class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260]">
-                <i class="fab fa-facebook-f"></i>
-                </a>
-    
-                <a href="https://instagram.com/yourpage"
-                  class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260] transition">
-                  <i class="fab fa-instagram"></i>
-                </a>
-    
-    
-              </div>
-            </div>
-    
-            <!-- Right column -->
-            <div class="px-6 lg:pl-12">
-              <h3 class="text-[#D4A74A] text-xl font-semibold mb-4">HIRE ME TODAY</h3>
-              <p class="text-gray-200 text-sm leading-relaxed">
-                Want to discuss your next project? <a href="#contact" class="text-[#D4A74A]">Contact me</a> or
-                send
-                message on
-                <a href="https://wa.me/923323289918" class="text-[#D4A74A]">WhatsApp</a>.
-              </p>
-    
-              <div class="mt-6">
-                <a href="#contact"
-                  class="inline-flex items-center bg-[#5A3E70] text-white font-semibold px-5 py-3 rounded border border-white hover:bg-[#fff] hover:text-[#5A3E70] transition">
-                  GET A QUOTE <i class="fas fa-arrow-right ml-3"></i>
-                </a>
-              </div>
-            </div>
-    
-          </div>
         </div>
-      </footer>
+    </footer>
 
     <script>
         function scrollToDemo() {
@@ -2481,80 +2468,81 @@
 
 
         document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.getElementById('menuButton');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const hamburgerIcon = menuButton.querySelector('.hamburger-icon');
+            const menuButton = document.getElementById('menuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburgerIcon = menuButton.querySelector('.hamburger-icon');
 
-    if (menuButton && mobileMenu) {
-      menuButton.addEventListener('click', (e) => {
-        e.stopPropagation();
-        mobileMenu.classList.toggle('show');
-        hamburgerIcon.classList.toggle('active');
-      });
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle('show');
+                    hamburgerIcon.classList.toggle('active');
+                });
 
-      // Close menu when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!menuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
-          mobileMenu.classList.remove('show');
-          hamburgerIcon.classList.remove('active');
-        }
-      });
+                // Close menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!menuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                        mobileMenu.classList.remove('show');
+                        hamburgerIcon.classList.remove('active');
+                    }
+                });
 
-      // Close menu when window is resized to desktop view
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) { // lg breakpoint
-          mobileMenu.classList.remove('show');
-          hamburgerIcon.classList.remove('active');
-        }
-      });
-    }
-  });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.faq-toggle').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const answer = btn.nextElementSibling;
-        const icon = btn.querySelector('span:last-child');
-        const allAnswers = document.querySelectorAll('.faq-answer');
-        const allIcons = document.querySelectorAll('.faq-toggle span:last-child');
-        allAnswers.forEach(a => {
-          if (a !== answer) a.classList.remove('open');
+                // Close menu when window is resized to desktop view
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth >= 1024) { // lg breakpoint
+                        mobileMenu.classList.remove('show');
+                        hamburgerIcon.classList.remove('active');
+                    }
+                });
+            }
         });
-        allIcons.forEach(i => {
-          if (i !== icon) i.textContent = '+';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.faq-toggle').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    const answer = btn.nextElementSibling;
+                    const icon = btn.querySelector('span:last-child');
+                    const allAnswers = document.querySelectorAll('.faq-answer');
+                    const allIcons = document.querySelectorAll('.faq-toggle span:last-child');
+                    allAnswers.forEach(a => {
+                        if (a !== answer) a.classList.remove('open');
+                    });
+                    allIcons.forEach(i => {
+                        if (i !== icon) i.textContent = '+';
+                    });
+                    if (!answer.classList.contains('open')) {
+                        answer.classList.add('open');
+                        icon.textContent = '-';
+                    } else {
+                        answer.classList.remove('open');
+                        icon.textContent = '+';
+                    }
+                });
+            });
         });
-        if (!answer.classList.contains('open')) {
-          answer.classList.add('open');
-          icon.textContent = '-';
-        } else {
-          answer.classList.remove('open');
-          icon.textContent = '+';
-        }
-      });
-    });
-  });
 
 
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 70, // adjust offset if navbar fixed
-          behavior: 'smooth'
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70, // adjust offset if navbar fixed
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
-      }
-    });
-  });
-  // Mobile dropdown toggle
-  const dropdownBtn = document.getElementById('mobileDropdownBtn');
-  const dropdownMenu = document.getElementById('mobileDropdown');
+        // Mobile dropdown toggle
+        const dropdownBtn = document.getElementById('mobileDropdownBtn');
+        const dropdownMenu = document.getElementById('mobileDropdown');
 
-  dropdownBtn.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('hidden');
-  });
+        dropdownBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
+
 </html>
