@@ -302,13 +302,13 @@
       height: 100%;
       margin: 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background-color: #2F2637;
+      
       color: #E0F2FE;
       font-size: 15px;
     }
 
     .page {
-
+      background-color: #2F2637;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -321,7 +321,6 @@
       max-width: 1080px;
       background: #2F2637;
       border-radius: 18px;
-      border: 1px solid #7E5D98;
       padding: 26px 30px 28px;
     }
 
@@ -402,12 +401,12 @@
       border-radius: 14px;
       border: 1px solid #7E5D98;
       padding: 18px 18px 20px;
-      background-color: #2F2637 !important;
+      background-color: #EFE7F4 !important;
     }
 
     .category-title {
 
-      color: #F7B787 !important;
+      color: #D4A74A !important;
     }
 
     .category-header {
@@ -479,7 +478,7 @@
       padding: 3px 8px;
       border-radius: 999px;
       border: 1px solid #7E5D98;
-      background: #EFE7F4;
+      background: #ffffff;
     }
 
     .tech-items {
@@ -495,7 +494,6 @@
       gap: 8px;
       padding: 7px 11px;
       border-radius: 999px;
-      border: 1px solid #7E5D98;
       background-color: #EFE7F4;
 
     }
@@ -645,7 +643,6 @@
       background: #f9fafb;
       box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
       overflow: hidden;
-      border: 1px solid #e5e7eb;
     }
 
     .screen-header {
@@ -940,21 +937,29 @@
             SOLUTION
             <span>▼</span>
           </a>
-
+        
           <!-- Dropdown -->
-          <div class="absolute left-0 top-full w-64 bg-[#7E5D98] border rounded-md shadow-md
-           opacity-0 pointer-events-none
-           group-hover:opacity-100 group-hover:pointer-events-auto
-           transition-all duration-250 z-50">
-            <a href="./index5.html" class="block px-4 py-2 hover:text-primary">→ Telehealth Software</a>
+          <div class="absolute left-0 top-full w-64 bg-black rounded-md shadow-md
+            opacity-0 pointer-events-none
+            group-hover:opacity-100 group-hover:pointer-events-auto
+            transition-all duration-250 z-50
+            mt-[36px]
+        
+            before:content-[''] before:absolute before:-top-[40px] before:left-0 before:w-full before:h-[40px]
+          ">
+              <a href="./index5.html" class="block px-4 py-2 hover:text-primary">→ Telehealth Software</a>
           </div>
         </div>
+        
+
         <a href="#services" class="text-sm font-medium tracking-wider hover:text-primary transition">SERVICES</a>
         <a href="#contact" class="text-sm font-medium tracking-wider hover:text-primary transition">CONTACT</a>
         <a href="#contact"
-          class="text-sm font-medium tracking-wider bg-[#6A4C82] text-[#fff] px-6 py-2 rounded border border-white hover:bg-[#fff] hover:text-[#6A4C82] transition">
-          HIRE ME
-        </a>
+        class="text-sm font-medium tracking-wider bg-[#6A4C82] text-[#fff] px-6 py-2 rounded 
+        hover:bg-[#D4A74A] hover:text-white transition duration-300">
+        HIRE ME
+      </a>
+      
       </div>
 
       <!-- Mobile button -->
@@ -969,7 +974,7 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="lg:hidden bg-[#7E5D98] border-t border-gray-800">
+    <div id="mobileMenu" class="lg:hidden bg-black border-t border-gray-800">
       <div class="px-4 py-3 space-y-3">
         <a href="./index.html" class="block text-white hover:text-primary transition-colors hover:pl-2">HOME</a>
 
@@ -981,7 +986,7 @@
             <span>▼</span>
           </button>
 
-          <div id="mobileDropdown" class="hidden bg-[#7E5D98] border rounded-md shadow-md mt-1">
+          <div id="mobileDropdown" class="hidden bg-black border rounded-md shadow-md mt-1">
             <a href="./index5.html" class="block px-4 py-2 text-white  hover:text-primary">→ Telehealth Software</a>
           </div>
         </div>
@@ -989,7 +994,7 @@
         <a href="#services" class="block text-white hover:text-primary transition-colors hover:pl-2">SERVICES</a>
         <a href="#contact" class="block text-white hover:text-primary transition-colors hover:pl-2">CONTACT</a>
         <a href="#contact"
-          class="block bg-[#1E3A8A] text-white px-4 py-2 text-center rounded border border-white hover:bg-white hover:text-[#1E3A8A] transition-colors hover:scale-[1.02]">
+          class="block bg-[#1E3A8A] text-white px-4 py-2 text-center hover:bg-[#D4A74A] hover:text-white transition-colors hover:scale-[1.02]">
           HIRE ME
         </a>
       </div>
@@ -1032,7 +1037,7 @@
 
 
         <!-- Subheading -->
-        <p class="text-[#5A3E70] text-lg mb-6 para-font ml-0 lg:ml-10 text-center lg:text-left">
+        <p class="text-[#D4A74A] text-lg mb-6 para-font ml-0 lg:ml-10 text-center lg:text-left">
           Building advanced software solutions for clinics, hospitals, and healthcare providers.
         </p>
 
@@ -1045,13 +1050,13 @@
           operations.
         </p>
 
-        <p class="para-font mb-8 ml-0 lg:ml-10 text-center lg:text-left text-[#5A3E70]">Ready to transform your
+        <p class="para-font font-bold mb-8 ml-0 lg:ml-10 text-center lg:text-left text-[#2B2135]">Ready to transform your
           healthcare
           services with cutting-edge software?</p>
 
         <!-- Button -->
         <a href="#contact"
-          class="text-[#fff] inline-flex items-center bg-[#D4A74A] px-8 py-3 rounded border border-white hover:bg-[#fff] hover:text-[#D4A74A] transition mx-auto lg:ml-10">
+          class="text-[#fff] inline-flex items-center bg-[#D4A74A] px-8 py-3 rounded border border-white hover:bg-[#5A3E70] hover:text-white  transition duration-300 mx-auto lg:ml-10">
           WORK WITH ME <i class="fa-solid fa-arrow-right ml-2"></i>
         </a>
 
@@ -1061,7 +1066,7 @@
       <div class="bg-[#ffffff] w-full lg:w-1/2 relative mt-10 lg:mt-0 flex justify-center">
         <div class="relative z-10 w-full h-auto">
           <iframe class="w-full h-[360px]"
-            src="https://www.youtube.com/embed/8W5TReLnDTQ?autoplay=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=8W5TReLnDTQ&disablekb=1"
+            src="//www.youtube.com/embed/8W5TReLnDTQ?autoplay=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=8W5TReLnDTQ&disablekb=1"
             title="Intro Video" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
           </iframe>
           <!-- Overlay to prevent clicking (optional) -->
@@ -1078,12 +1083,12 @@
   <!-- Services Section -->
   <section id="services" class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="lg:text-3xl text-center font-normal text-[#7E5D98] mb-2 tracking-wide"
+      <h2 class="lg:text-3xl text-center font-normal text-[#D4A74A] mb-2 tracking-wide"
         style="font-family: Inter, sans-serif; font-weight: 500;">WHAT I CAN BUILD FOR HEALTHCARE ORGANISATIONS
       </h2>
       <div class="max-w-[1200px] mx-auto px-4 pb-12">
         <div class="w-full flex justify-center">
-          <span class="block w-16 h-1 bg-[#5A3E70] rounded"></span>
+          <span class="block w-16 h-1 bg-[#D4A74A] rounded"></span>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1210,10 +1215,10 @@
   <!-- Technologies Section -->
   <section class="bg-[#2F2637] py-10">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-center text-[25px] font-normal text-[#F7F5FA] mb-1 tracking-wide"
+      <h2 class="text-center text-[25px] font-normal text-[#D4A74A] mb-1 tracking-wide"
         style="font-family: Inter, sans-serif; font-weight: 500;">TECHNOLOGIES AND TOOLS I MOSTLY USE</h2>
       <div class="flex justify-center mb-4">
-        <span class="block w-12 h-[2px] bg-[#F7F5FA] rounded"></span>
+        <span class="block w-12 h-[2px] bg-[#D4A74A] rounded"></span>
       </div>
       <p class="text-center text-[#EFE7F4] text-[15px] font-normal mb-8 max-w-3xl mx-auto leading-relaxed"
         style="font-family: Inter, sans-serif; font-weight: 400;">
@@ -1227,20 +1232,7 @@
   <section class="page" id="solution">
     <section class="wrapper">
       <div class="header">
-        <div class="title-block">
-          <h2 class="onetwo">Technical <span>Expertise</span></h2>
-          <p>
-            A concise overview of the backend, frontend, mobile, data, healthcare, cloud,
-            security and tooling experience I use in real projects.
-          </p>
-        </div>
-        <div class="tagline">
-          <span class="tagline-pill">Focused on secure, production‑ready .NET solutions.</span>
-          <span class="tagline-pill">Australia‑based, healthcare aware.</span>
-        </div>
-      </div>
-
-      <div class="skills-grid">
+        <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
         <div class="category">
           <div class="category-header">
             <div class="category-heading-left">
@@ -1496,7 +1488,7 @@
   <section class="py-16 bg-white flex justify-center items-center min-h-screen">
     <div class="container px-6 sm:px-8 md:px-12 mt-0 md:mt-[-190px]">
       <div class="max-w-5xl text-left mx-auto">
-        <h2 class="text-[25px] font-normal text-[#7E5D98] mb-6 tracking-wide"
+        <h2 class="text-[25px] font-normal text-[#D4A74A] mb-6 tracking-wide"
           style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 30px;">
           WHY HIRE UMER ZAFAR AS YOUR HEALTHCARE SOFTWARE DEVELOPER?
         </h2>
@@ -1529,10 +1521,11 @@
   <!-- Key Benefits Section -->
   <section class="bg-white">
     <div class="container mx-auto max-w-5xl mt-0 md:mt-[-220px] px-6 sm:px-8 md:px-12">
-      <h3 class="text-left text-[20px] font-normal mb-6"
-        style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98; line-height: 30px;">
-        Key Benefits of Working With Me:
-      </h3>
+      <h3 class="text-left text-[20px] font-bold uppercase mb-6"
+    style="font-family: 'Proxima Nova Light', sans-serif; color: #D4A74A; line-height: 30px;">
+    KEY BENEFITS OF WORKING WITH ME:
+</h3>
+
 
       <ul class="space-y-4 mb-8">
         <li class="flex items-start text-[18px]"
@@ -1577,7 +1570,7 @@
         </li>
       </ul>
 
-      <p class="text-[18px]" style="font-family: 'Proxima Nova Light', sans-serif; color: #2B2135; line-height: 27px;">
+      <p class="text-[18px] mb-[60px]" style="font-family: 'Proxima Nova Light', sans-serif; color: #2B2135; line-height: 27px;">
         Choosing me means choosing a reliable, skilled, and experienced healthcare software developer who delivers
         end-to-end solutions tailored to your organization. Let’s build software that transforms your healthcare
         services and sets your operations up for long-term success.
@@ -1588,18 +1581,18 @@
   <!-- Call to Action Section -->
   <section class="py-16 bg-[#EFE7F4]">
     <div class="container mx-auto px-4 max-w-5xl text-center ">
-      <h2 class="text-[25px] font-normal text-[#7E5D98] mb-2 tracking-wide line-height:30px;"
+      <h2 class="text-[25px] font-normal text-[#D4A74A] mb-2 tracking-wide line-height:30px;"
         style="font-family: 'Proxima Nova Light', sans-serif;">WANT TO HIRE A PROFESSIONAL HEALTHCARE SOFTWARE
         DEVELOPER?
       </h2>
       <div class="flex justify-center mb-6">
-        <span class="block w-16 h-[2px] bg-[#7E5D98] rounded"></span>
+        <span class="block w-16 h-[2px] bg-[#D4A74A] rounded"></span>
       </div>
       <p class="text-[#2B2135] text-[18px] mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Let’s turn
         Let’s turn your healthcare technology needs into reliable, secure, and scalable software solutions — from web
         platforms to mobile apps.</p>
       <a href="#contact"
-        class="inline-block bg-[#D4A74A] text-white text-[14px] sm:text-[18px] font-normal px-5 py-3 sm:px-8 sm:py-4 rounded border border-white hover:bg-white hover:text-[#D4A74A] transition"
+        class="inline-block bg-[#D4A74A] text-white text-[14px] sm:text-[18px] font-normal px-5 py-3 sm:px-8 sm:py-4 rounded hover:bg-[#5A3E70] hover:text-white transition duration-300"
         style="font-family: 'Proxima Nova Light', sans-serif;">
         START YOUR PROJECT TODAY <i class="fas fa-arrow-right-to-bracket ml-2"></i>
       </a>
@@ -1609,11 +1602,11 @@
   <!-- Testimonials Section -->
   <section id="testimonials" class="py-16 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-center text-[25px] font-normal text-[#7E5D98] mb-2 tracking-wide"
+      <h2 class="text-center text-[25px] font-normal text-[#D4A74A] mb-2 tracking-wide"
         style="font-family: 'Proxima Nova Light', sans-serif;">WHAT CLIENTS ARE SAYING ABOUT MY HEALTHCARE SOFTWARE
         DEVELOPMENT</h2>
       <div class="flex justify-center mb-10">
-        <span class="block w-16 h-1 bg-[#7E5D98] rounded"></span>
+        <span class="block w-16 h-1 bg-[#D4A74A] rounded"></span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Testimonial 1 -->
@@ -1712,8 +1705,7 @@
           <li><span>✓</span> Integrations with HL7 / FHIR, SMD, Medicare and payment gateways</li>
           <li><span>✓</span> Azure cloud hosting, CI/CD pipelines and role‑based security</li>
         </ul>
-        <a href="#contact" class=" text-base font-medium tracking-wider bg-[#4AAFB8] text-white px-7 py-2.5 rounded-md border border-white 
-          hover:bg-white hover:text-[#4AAFB8] transition">
+        <a href="#contact" class=" text-base font-medium tracking-wider bg-[#5A3E70] text-white px-7 py-2.5 rounded-md hover:bg-[#D4A74A] hover:text-white transition">
           View Technical Services
         </a>
 
@@ -1769,7 +1761,7 @@
   <!-- Industries Section -->
   <section id="industries" class="py-16 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-center text-[28px] font-normal text-[#7E5D98] mb-3 tracking-wide"
+      <h2 class="text-center text-[28px] font-normal text-[#D4A74A] mb-3 tracking-wide"
         style="font-family: 'Proxima Nova Light', sans-serif;">
         HEALTHCARE ORGANISATIONS I PROUDLY SUPPORT
       </h2>
@@ -1779,7 +1771,7 @@
         operations, improve patient care, and enhance digital healthcare services across Australia.
       </p>
       <div class="flex justify-center mb-8">
-        <span class="block w-12 h-1 bg-[#5A3E70] rounded "></span>
+        <span class="block w-12 h-1 bg-[#D4A74A] rounded "></span>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1875,16 +1867,16 @@
 
   <section class="py-16 bg-[#EFE7F4] ">
     <div class="container mx-auto px-4 max-w-5xl text-center ">
-      <h2 class="text-[25px] font-normal text-[#7E5D98] mb-2 tracking-wide line-height:30px;"
+      <h2 class="text-[25px] font-normal text-[#D4A74A] mb-2 tracking-wide line-height:30px;"
         style="font-family: 'Proxima Nova Light', sans-serif;">BRING YOUR HEALTHCARE SOFTWARE VISION TO LIFE</h2>
       <div class="flex justify-center mb-6">
-        <span class="block w-16 h-[2px] bg-[#7E5D98] rounded"></span>
+        <span class="block w-16 h-[2px] bg-[#D4A74A] rounded"></span>
       </div>
       <p class="text-[#2B2135]  text-[18px] mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Transform your
         healthcare technology ideas into secure, scalable, and user-friendly software solutions — from web platforms to
         mobile apps.</p>
       <a href="#contact"
-        class="inline-block bg-[#D4A74A] text-white text-[14px] sm:text-[18px] font-normal px-8 py-4 rounded border border-white hover:bg-[#fff] hover:text-[#D4A74A] transition"
+        class="inline-block bg-[#D4A74A] text-white text-[14px] sm:text-[18px] font-normal px-8 py-4 rounded hover:bg-[#5A3E70] hover:text-whitetransition transition duration-300"
         style="font-family: 'Proxima Nova Light', sans-serif;">
         LAUNCH YOUR PROJECT NOW <i class="fas fa-arrow-right-to-bracket ml-2"></i>
       </a>
@@ -1894,7 +1886,7 @@
   <!-- FAQ Section -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4 max-w-5xl">
-      <h2 class="text-center text-[28px] font-normal text-[#7E5D98] mb-10 tracking-wide"
+      <h2 class="text-center text-[28px] font-normal text-[#D4A74A] mb-10 tracking-wide"
         style="font-family: 'Proxima Nova Light', sans-serif;">FREQUENTLY ASKED QUESTIONS</h2>
       <div id="faqAccordion" class="space-y-4">
         <!-- FAQ 1 -->
@@ -2001,11 +1993,11 @@
   <!-- Contact Section -->
   <section id="contact" class="bg-[#EFE7F4] py-16 ">
     <div class="container mx-auto px-4">
-      <h2 class="text-center text-[#5A3E70] text-[32px] leading-[1.2] mb-2"
+      <h2 class="text-center text-[#D4A74A] text-[32px] leading-[1.2] mb-2"
         style="font-family: 'Proxima Nova Light', sans-serif;">
         HIRE A HEALTHCARE SOFTWARE DEVELOPER TODAY
       </h2>
-      <div class="w-16 h-[2px] bg-[#5A3E70] mx-auto mb-4"></div>
+      <div class="w-16 h-[2px] bg-[#D4A74A] mx-auto mb-4"></div>
       <p class="text-[#2B2135]  text-center mb-12 text-[16px] max-w-3xl mx-auto leading-[1.6]"
         style="font-family: 'Proxima Nova Light', sans-serif;">
         Provide your project details, including budget and timeline, and let's collaborate to create a secure, scalable,
@@ -2221,7 +2213,7 @@
 
           <div class="mt-6">
             <a href="#contact"
-              class="inline-flex items-center bg-[#5A3E70] text-white font-semibold px-5 py-3 rounded border border-white hover:bg-[#fff] hover:text-[#5A3E70] transition">
+              class="inline-flex items-center bg-[#5A3E70] text-white font-semibold px-5 py-3 rounded hover:bg-[#D4A74A] hover:text-white transition duration-300">
               GET A QUOTE <i class="fas fa-arrow-right ml-3"></i>
             </a>
           </div>
