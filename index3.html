@@ -302,7 +302,7 @@
       height: 100%;
       margin: 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      
+
       color: #E0F2FE;
       font-size: 15px;
     }
@@ -423,15 +423,15 @@
     }
 
     .category-icon {
-      width: 28px;
-      height: 28px;
+      width: 30px;
+      height: 30px;
       border-radius: 999px;
       border: 1px solid #7E5D98;
       background: #D4A74A;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 700;
     }
 
@@ -935,9 +935,13 @@
         <div class="relative group inline-block">
           <a href="#" class="text-sm font-medium tracking-wider hover:text-primary transition flex items-center gap-1">
             SOLUTION
-            <span>▼</span>
+            <span class="inline-block w-4 h-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
           </a>
-        
+
           <!-- Dropdown -->
           <div class="absolute left-0 top-full w-64 bg-black rounded-md shadow-md
             opacity-0 pointer-events-none
@@ -947,19 +951,17 @@
         
             before:content-[''] before:absolute before:-top-[40px] before:left-0 before:w-full before:h-[40px]
           ">
-              <a href="./index5.html" class="block px-4 py-2 hover:text-primary">→ Telehealth Software</a>
+            <a href="./index5.html" class="block px-4 py-2 hover:text-primary">→ Telehealth Software</a>
           </div>
         </div>
-        
+
 
         <a href="#services" class="text-sm font-medium tracking-wider hover:text-primary transition">SERVICES</a>
         <a href="#contact" class="text-sm font-medium tracking-wider hover:text-primary transition">CONTACT</a>
-        <a href="#contact"
-        class="text-sm font-medium tracking-wider bg-[#6A4C82] text-[#fff] px-6 py-2 rounded 
-        hover:bg-[#D4A74A] hover:text-white transition duration-300">
-        HIRE ME
-      </a>
-      
+        <a href="#contact" class="text-sm font-medium tracking-wider bg-[#6A4C82] text-[#fff] px-6 py-2 rounded hover:bg-[#D4A74A] hover:text-white transition duration-300">
+          HIRE ME
+        </a>
+
       </div>
 
       <!-- Mobile button -->
@@ -983,7 +985,11 @@
           <button id="mobileDropdownBtn"
             class="w-full text-left text-sm font-medium tracking-wider hover:text-primary text-[#ffffff] transition flex items-center justify-between gap-1">
             SOLUTION
-            <span>▼</span>
+            <span class="inline-block w-4 h-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
           </button>
 
           <div id="mobileDropdown" class="hidden bg-black border rounded-md shadow-md mt-1">
@@ -994,7 +1000,7 @@
         <a href="#services" class="block text-white hover:text-primary transition-colors hover:pl-2">SERVICES</a>
         <a href="#contact" class="block text-white hover:text-primary transition-colors hover:pl-2">CONTACT</a>
         <a href="#contact"
-          class="block bg-[#1E3A8A] text-white px-4 py-2 text-center hover:bg-[#D4A74A] hover:text-white transition-colors hover:scale-[1.02]">
+          class="block bg-[#5A3E70] text-white px-4 py-2 text-center hover:bg-[#D4A74A] hover:text-white transition-colors hover:scale-[1.02]">
           HIRE ME
         </a>
       </div>
@@ -1010,7 +1016,7 @@
         <!-- Social Icons -->
         <div class="hidden lg:flex flex-col gap-5 absolute left-[-20px] top-[20%] -translate-y-1/2 opacity-90">
           <a href="https://www.linkedin.com/in/lms-membership-and-learning-community-development-expert/"
-            class="border border-[#5A3E70] text-[#5A3E70] w-7 h-7 flex items-center justify-center hover:border-[#C9B5D6] hover:text-[#C9B5D6] transition">
+            class="border border-[#5A3E70] text-[#5A3E70] w-7 h-7 flex items-center justify-center hover:border-[#C9B5D6] hover:text-[#C9B5D6] transition ">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://wa.me/923323289918"
@@ -1037,7 +1043,7 @@
 
 
         <!-- Subheading -->
-        <p class="text-[#D4A74A] text-lg mb-6 para-font ml-0 lg:ml-10 text-center lg:text-left">
+        <p class="text-[#D4A74A] para-font mb-6 para-font ml-0 lg:ml-10 text-center lg:text-left">
           Building advanced software solutions for clinics, hospitals, and healthcare providers.
         </p>
 
@@ -1050,7 +1056,8 @@
           operations.
         </p>
 
-        <p class="para-font font-bold mb-8 ml-0 lg:ml-10 text-center lg:text-left text-[#2B2135]">Ready to transform your
+        <p class="para-font font-bold mb-8 ml-0 lg:ml-10 text-center lg:text-left text-[#2B2135]">Ready to transform
+          your
           healthcare
           services with cutting-edge software?</p>
 
@@ -1215,12 +1222,12 @@
   <!-- Technologies Section -->
   <section class="bg-[#2F2637] py-10">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-center text-[25px] font-normal text-[#D4A74A] mb-1 tracking-wide"
+      <h2 class="text-center lg:text-3xl font-normal text-[#D4A74A] mb-1 tracking-wide"
         style="font-family: Inter, sans-serif; font-weight: 500;">TECHNOLOGIES AND TOOLS I MOSTLY USE</h2>
       <div class="flex justify-center mb-4">
         <span class="block w-12 h-[2px] bg-[#D4A74A] rounded"></span>
       </div>
-      <p class="text-center text-[#EFE7F4] text-[15px] font-normal mb-8 max-w-3xl mx-auto leading-relaxed"
+      <p class="text-center text-[#EFE7F4] text-lg font-normal mb-8 max-w-3xl mx-auto leading-relaxed"
         style="font-family: Inter, sans-serif; font-weight: 400;">
         To deliver robust, secure, and scalable healthcare software for Australian clinics and hospitals, I leverage a
         modern tech stack that ensures compliance, performance, and seamless user experiences. From custom web platforms
@@ -1229,259 +1236,259 @@
       </p>
   </section>
 
-  <section class="page" id="solution">
+  <section class="page mt-[-70px]" id="solution">
     <section class="wrapper">
       <div class="header">
         <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon">BE</div>
-              <div class="category-title">Web &amp; Backend Development</div>
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon">BE</div>
+                <div class="category-title">Web &amp; Backend Development</div>
+              </div>
+              <div class="category-tag ">Core expertise</div>
             </div>
-            <div class="category-tag ">Core expertise</div>
-          </div>
-          <div class="tech-items flex flex-col items-start">
-            <div class="tech-item flex items-center ">
+            <div class="tech-items flex flex-col items-start">
+              <div class="tech-item flex items-center ">
                 <div class="tech-logo green">.N</div>
                 <div class="tech-text-main">.NET / .NET Core &amp; C#</div>
-            </div>
-            <div class="tech-item flex items-center ">
+              </div>
+              <div class="tech-item flex items-center ">
                 <div class="tech-logo green">API</div>
                 <div class="tech-text-main">ASP.NET Core MVC &amp; Web API</div>
-            </div>
-            <div class="tech-item flex items-center ">
+              </div>
+              <div class="tech-item flex items-center ">
                 <div class="tech-logo purple">EF</div>
                 <div class="tech-text-main">Entity Framework Core</div>
-            </div>
-            <div class="tech-item flex items-center">
+              </div>
+              <div class="tech-item flex items-center">
                 <div class="tech-logo teal">SR</div>
                 <div class="tech-text-main">SignalR (real‑time)</div>
+              </div>
             </div>
-        </div>
-                </div>
-
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon blue">FE</div>
-              <div class="category-title ">Frontend &amp; Client-Side</div>
-            </div>
-            <div class="category-tag ">Modern UI</div>
           </div>
-          <div class="tech-items grid grid-cols-2  gap-4">
-            <div class="tech-item flex items-center gap-2">
+
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon blue">FE</div>
+                <div class="category-title ">Frontend &amp; Client-Side</div>
+              </div>
+              <div class="category-tag ">Modern UI</div>
+            </div>
+            <div class="tech-items grid grid-cols-2  gap-4">
+              <div class="tech-item flex items-center gap-2">
                 <div class="tech-logo blue">R</div>
                 <div class="tech-text-main">React.js</div>
-            </div>
-            <div class="tech-item flex items-center gap-2">
+              </div>
+              <div class="tech-item flex items-center gap-2">
                 <div class="tech-logo blue">TS</div>
                 <div class="tech-text-main">TypeScript / JavaScript</div>
-            </div>
-            <div class="tech-item flex items-center gap-2">
+              </div>
+              <div class="tech-item flex items-center gap-2">
                 <div class="tech-logo teal">H5</div>
                 <div class="tech-text-main">HTML5 &amp; CSS3</div>
-            </div>
-            <div class="tech-item flex items-center gap-2">
+              </div>
+              <div class="tech-item flex items-center gap-2">
                 <div class="tech-logo purple">B</div>
                 <div class="tech-text-main">Bootstrap</div>
-            </div>
-            <div class="tech-item flex items-center gap-2">
+              </div>
+              <div class="tech-item flex items-center gap-2">
                 <div class="tech-logo purple">Tw</div>
                 <div class="tech-text-main">Tailwind CSS</div>
-            </div>
-            <div class="tech-item flex items-center gap-2">
+              </div>
+              <div class="tech-item flex items-center gap-2">
                 <div class="tech-logo blue">jQ</div>
                 <div class="tech-text-main">jQuery</div>
+              </div>
             </div>
-        </div>
-        
-        </div>
 
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon teal">M</div>
-              <div class="category-title ">Mobile Applications</div>
-            </div>
-            <div class="category-tag ">Optional</div>
           </div>
-          <div class="tech-items flex flex-col items-start">
-            <div class="tech-item">
-              <div class="tech-logo teal">XM</div>
-              <div class="tech-text-main">Xamarin / .NET MAUI</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">RN</div>
-              <div class="tech-text-main">React Native</div>
-            </div>
-          </div>
-        </div>
 
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon purple">DB</div>
-              <div class="category-title ">Databases &amp; Data Management</div>
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon teal">M</div>
+                <div class="category-title ">Mobile Applications</div>
+              </div>
+              <div class="category-tag ">Optional</div>
             </div>
-            <div class="category-tag ">Data layer</div>
-          </div>
-          <div class="tech-items flex flex-col items-start">
-            <div class="tech-item">
-              <div class="tech-logo purple">SQL</div>
-              <div class="tech-text-main">Microsoft SQL Server</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">PG</div>
-              <div class="tech-text-main">PostgreSQL</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo teal">R</div>
-              <div class="tech-text-main">Redis</div>
+            <div class="tech-items flex flex-col items-start">
+              <div class="tech-item">
+                <div class="tech-logo teal">XM</div>
+                <div class="tech-text-main">Xamarin / .NET MAUI</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">RN</div>
+                <div class="tech-text-main">React Native</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon gold">H</div>
-              <div class="category-title ">Healthcare APIs &amp; Integrations</div>
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon purple">DB</div>
+                <div class="category-title ">Databases &amp; Data Management</div>
+              </div>
+              <div class="category-tag ">Data layer</div>
             </div>
-            <div class="category-tag ">HealthTech</div>
-          </div>
-          <div class="tech-items flex flex-col items-start">
-            <div class="tech-item">
-              <div class="tech-logo gold">F</div>
-              <div class="tech-text-main">HL7 / FHIR</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo gold">S</div>
-              <div class="tech-text-main">Secure Messaging (SMD)</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo gold">M</div>
-              <div class="tech-text-main">Medicare APIs</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo purple">St</div>
-              <div class="tech-text-main">Stripe · Klarna · PayID</div>
+            <div class="tech-items flex flex-col items-start">
+              <div class="tech-item">
+                <div class="tech-logo purple">SQL</div>
+                <div class="tech-text-main">Microsoft SQL Server</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">PG</div>
+                <div class="tech-text-main">PostgreSQL</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo teal">R</div>
+                <div class="tech-text-main">Redis</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon blue">C</div>
-              <div class="category-title ">Cloud, Hosting &amp; DevOps</div>
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon gold">H</div>
+                <div class="category-title ">Healthcare APIs &amp; Integrations</div>
+              </div>
+              <div class="category-tag ">HealthTech</div>
             </div>
-            <div class="category-tag ] ">Azure focused</div>
-          </div>
-          <div class="tech-items grid grid-cols-2  gap-4">
-            <div class="tech-item">
-              <div class="tech-logo blue">Az</div>
-              <div class="tech-text-main">Microsoft Azure</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">AS</div>
-              <div class="tech-text-main">Azure App Service</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">SQL</div>
-              <div class="tech-text-main">Azure SQL</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">AD</div>
-              <div class="tech-text-main">Azure AD</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo teal">Fx</div>
-              <div class="tech-text-main">Azure Functions</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">CI</div>
-              <div class="tech-text-main">Azure DevOps (CI/CD)</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo teal">D</div>
-              <div class="tech-text-main">Docker</div>
+            <div class="tech-items flex flex-col items-start">
+              <div class="tech-item">
+                <div class="tech-logo gold">F</div>
+                <div class="tech-text-main">HL7 / FHIR</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo gold">S</div>
+                <div class="tech-text-main">Secure Messaging (SMD)</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo gold">M</div>
+                <div class="tech-text-main">Medicare APIs</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo purple">St</div>
+                <div class="tech-text-main">Stripe · Klarna · PayID</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon gold">S</div>
-              <div class="category-title ">Security &amp; Compliance</div>
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon blue">C</div>
+                <div class="category-title ">Cloud, Hosting &amp; DevOps</div>
+              </div>
+              <div class="category-tag ] ">Azure focused</div>
             </div>
-            <div class="category-tag ">Best practice</div>
+            <div class="tech-items grid grid-cols-2  gap-4">
+              <div class="tech-item">
+                <div class="tech-logo blue">Az</div>
+                <div class="tech-text-main">Microsoft Azure</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">AS</div>
+                <div class="tech-text-main">Azure App Service</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">SQL</div>
+                <div class="tech-text-main">Azure SQL</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">AD</div>
+                <div class="tech-text-main">Azure AD</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo teal">Fx</div>
+                <div class="tech-text-main">Azure Functions</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">CI</div>
+                <div class="tech-text-main">Azure DevOps (CI/CD)</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo teal">D</div>
+                <div class="tech-text-main">Docker</div>
+              </div>
+            </div>
           </div>
-          <div class="tech-items">
-            <div class="tech-item">
-              <div class="tech-logo gold">Au</div>
-              <div class="tech-text-main">Australian Digital Health</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo gold">H</div>
-              <div class="tech-text-main">HIPAA best practices</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo teal">O2</div>
-              <div class="tech-text-main">OAuth2 / OpenID Connect</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo teal">JW</div>
-              <div class="tech-text-main">JWT Authentication</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo purple">A</div>
-              <div class="tech-text-main">AES‑256 Encryption</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo purple">R</div>
-              <div class="tech-text-main">Role‑Based Access Control (RBAC)</div>
-            </div>
-          </div>
-        </div>
 
-        <div class="category">
-          <div class="category-header">
-            <div class="category-heading-left">
-              <div class="category-icon teal">T</div>
-              <div class="category-title ">Tools I Use Daily</div>
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon gold">S</div>
+                <div class="category-title ">Security &amp; Compliance</div>
+              </div>
+              <div class="category-tag ">Best practice</div>
             </div>
-            <div class="category-tag ">Delivery</div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-logo gold">Au</div>
+                <div class="tech-text-main">Australian Digital Health</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo gold">H</div>
+                <div class="tech-text-main">HIPAA best practices</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo teal">O2</div>
+                <div class="tech-text-main">OAuth2 / OpenID Connect</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo teal">JW</div>
+                <div class="tech-text-main">JWT Authentication</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo purple">A</div>
+                <div class="tech-text-main">AES‑256 Encryption</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo purple">R</div>
+                <div class="tech-text-main">Role‑Based Access Control (RBAC)</div>
+              </div>
+            </div>
           </div>
-          <div class="tech-items grid grid-cols-2  gap-4">
-            <div class="tech-item">
-              <div class="tech-logo green">VS</div>
-              <div class="tech-text-main">Visual Studio &amp; VS Code</div>
+
+          <div class="category">
+            <div class="category-header">
+              <div class="category-heading-left">
+                <div class="category-icon teal">T</div>
+                <div class="category-title ">Tools I Use Daily</div>
+              </div>
+              <div class="category-tag ">Delivery</div>
             </div>
-            <div class="tech-item">
-              <div class="tech-logo teal">P</div>
-              <div class="tech-text-main">Postman</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">G</div>
-              <div class="tech-text-main">Git &amp; GitHub</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo blue">Az</div>
-              <div class="tech-text-main">Azure Repos</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo purple">J</div>
-              <div class="tech-text-main">Jira</div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-logo teal">F</div>
-              <div class="tech-text-main">Figma</div>
+            <div class="tech-items grid grid-cols-2  gap-4">
+              <div class="tech-item">
+                <div class="tech-logo green">VS</div>
+                <div class="tech-text-main">Visual Studio &amp; VS Code</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo teal">P</div>
+                <div class="tech-text-main">Postman</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">G</div>
+                <div class="tech-text-main">Git &amp; GitHub</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo blue">Az</div>
+                <div class="tech-text-main">Azure Repos</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo purple">J</div>
+                <div class="tech-text-main">Jira</div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-logo teal">F</div>
+                <div class="tech-text-main">Figma</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
     </div>
   </section>
@@ -1489,14 +1496,13 @@
   <section class="py-16 bg-white flex justify-center items-center min-h-screen">
     <div class="container px-6 sm:px-8 md:px-12 mt-0 md:mt-[-190px]">
       <div class="max-w-5xl text-left mx-auto">
-        <h2 class="text-[25px] font-normal text-[#D4A74A] mb-6 tracking-wide"
-          style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 30px;">
+        <h2 class="lg:text-3xl font-normal text-[#D4A74A] mb-6 tracking-wide"
+          style="font-family: Inter, sans-serif; font-weight: 500;">
           WHY HIRE UMER ZAFAR AS YOUR HEALTHCARE SOFTWARE DEVELOPER?
         </h2>
 
         <div>
-          <p class="text-[#2B2135] text-[18px] mb-6"
-            style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 27px;">
+          <p class="text-[#2B2135] para-font mb-6">
             Choosing the right software developer for your healthcare organization is critical. Poorly designed or
             insecure software can disrupt operations, compromise patient data, and impact service quality. Whether you
             need a new Telehealth platform, a custom NDIS system, or an After-Hours management solution, working with an
@@ -1504,8 +1510,7 @@
             healthcare standards.
           </p>
 
-          <p class="text-[#2B2135] text-[18px]"
-            style="font-family: 'Proxima Nova Light', sans-serif; font-weight: 400; line-height: 27px;">
+          <p class="text-[#2B2135] para-font">
             With over 10 years of experience in healthcare software development, I’ve built solutions for clinics,
             hospitals, and care providers across Australia. My expertise spans web and mobile applications, secure data
             integrations, workflow automation, and compliance with local regulations. By working with me, you avoid
@@ -1522,10 +1527,10 @@
   <!-- Key Benefits Section -->
   <section class="bg-white">
     <div class="container mx-auto max-w-5xl mt-0 md:mt-[-220px] px-6 sm:px-8 md:px-12">
-      <h3 class="text-left text-[20px] font-bold uppercase mb-6"
-    style="font-family: 'Proxima Nova Light', sans-serif; color: #D4A74A; line-height: 30px;">
-    KEY BENEFITS OF WORKING WITH ME:
-</h3>
+      <h3 class="text-left text-[20px] font-bold uppercase mb-6 text-[#D4A74A]"
+        style="font-family: Inter, sans-serif; font-weight: 700;">
+        KEY BENEFITS OF WORKING WITH ME:
+      </h3>
 
 
       <ul class="space-y-4 mb-8">
@@ -1571,7 +1576,7 @@
         </li>
       </ul>
 
-      <p class="text-[18px] mb-[60px]" style="font-family: 'Proxima Nova Light', sans-serif; color: #2B2135; line-height: 27px;">
+      <p class="para-font mb-[60px] text-[#2B2135] ">
         Choosing me means choosing a reliable, skilled, and experienced healthcare software developer who delivers
         end-to-end solutions tailored to your organization. Let’s build software that transforms your healthcare
         services and sets your operations up for long-term success.
@@ -1580,16 +1585,15 @@
   </section>
 
   <!-- Call to Action Section -->
-  <section class="py-16 bg-[#EFE7F4]">
-    <div class="container mx-auto px-4 max-w-5xl text-center ">
-      <h2 class="text-[25px] font-normal text-[#D4A74A] mb-2 tracking-wide line-height:30px;"
-        style="font-family: 'Proxima Nova Light', sans-serif;">WANT TO HIRE A PROFESSIONAL HEALTHCARE SOFTWARE
-        DEVELOPER?
+  <section class="py-16 bg-[#F9F1E7]">
+    <div class="container mx-auto px-4 text-center ">
+      <h2 class="lg:text-3xl font-normal text-[#D4A74A] mb-2 tracking-wide"
+        style="font-family: Inter, sans-serif; font-weight: 500;">WANT TO HIRE A PROFESSIONAL HEALTHCARE SOFTWARE DEVELOPER?
       </h2>
-      <div class="flex justify-center mb-6">
-        <span class="block w-16 h-[2px] bg-[#D4A74A] rounded"></span>
+      <div class="flex justify-center">
+        <span class="block h-[2px] bg-[#D4A74A] rounded"></span>
       </div>
-      <p class="text-[#2B2135] text-[18px] mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Let’s turn
+      <p class="text-[#2B2135] para-font mb-8" >Let’s turn
         Let’s turn your healthcare technology needs into reliable, secure, and scalable software solutions — from web
         platforms to mobile apps.</p>
       <a href="#contact"
@@ -1603,8 +1607,8 @@
   <!-- Testimonials Section -->
   <section id="testimonials" class="py-16 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-center text-[25px] font-normal text-[#D4A74A] mb-2 tracking-wide"
-        style="font-family: 'Proxima Nova Light', sans-serif;">WHAT CLIENTS ARE SAYING ABOUT MY HEALTHCARE SOFTWARE
+      <h2 class="text-center lg:text-3xl font-normal text-[#D4A74A] mb-2 tracking-wide"
+        style="font-family: Inter, sans-serif; font-weight: 500;">WHAT CLIENTS ARE SAYING ABOUT MY HEALTHCARE SOFTWARE
         DEVELOPMENT</h2>
       <div class="flex justify-center mb-10">
         <span class="block w-16 h-1 bg-[#D4A74A] rounded"></span>
@@ -1612,75 +1616,70 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Testimonial 1 -->
         <div class="bg-[#EFE7F4] rounded-xl shadow p-8 flex flex-col items-center text-center border border-gray-200">
-          <div class="text-[#7E5D98] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
-          <p class="text-[18px] text-[#2B2135] mb-8"
-            style="font-family: 'Proxima Nova Light', sans-serif; line-height: 1.5;">
+          <div class="text-[#D4A74A] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+          <p class="para-font text-[#2B2135] mb-8"
+            >
             “Umer transformed our clinic’s operations! The custom Telehealth platform he developed is seamless, secure,
             and easy for both staff and patients to use. His understanding of healthcare workflows and compliance
             requirements made the whole process smooth and efficient.”
           </p>
           <div class="w-20 h-1 bg-[#7E5D98] mx-auto mb-2"></div>
-          <div class="text-[18px] text-gray-600" style="font-family: 'Proxima Nova Light', sans-serif;">Dr. Sarah M.,
+          <div class="text-[18px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">Dr. Sarah M.,
             Melbourne Clinic</div>
         </div>
         <!-- Testimonial 2 -->
         <div class="bg-[#EFE7F4] rounded-xl shadow p-8 flex flex-col items-center text-center border border-gray-200">
-          <div class="text-[#7E5D98] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
-          <p class="text-[18px] text-[#2B2135] mb-8"
-            style="font-family: 'Proxima Nova Light', sans-serif; line-height: 1.5;">
+          <div class="text-[#D4A74A] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+          <p class="para-font text-[#2B2135] mb-8">
             “We were struggling with disjointed systems and data management issues. Umer integrated our EMR, billing,
             and scheduling systems flawlessly. His development work significantly improved operational efficiency and
             data accuracy across the hospital.”
           </p>
           <div class="w-20 h-1 bg-[#7E5D98] mx-auto mb-2"></div>
-          <div class="text-[18px] text-gray-600" style="font-family: 'Proxima Nova Light', sans-serif;">James P., Sydney
+          <div class="text-[18px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">James P., Sydney
             Hospital</div>
         </div>
         <div class="bg-[#EFE7F4] rounded-xl shadow p-8 flex flex-col items-center text-center border border-gray-200">
-          <div class="text-[#7E5D98] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
-          <p class="text-[18px] text-[#2B2135]  mb-8"
-            style="font-family: 'Proxima Nova Light', sans-serif; line-height: 1.5;">
+          <div class="text-[#D4A74A] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+          <p class="para-font text-[#2B2135] mb-8">
             “Umer’s mobile app for our patients has been a game-changer. It allows easy appointment scheduling,
             teleconsultations, and secure messaging. The interface is intuitive, and the app runs flawlessly on both iOS
             and Android.”
           </p>
           <div class="w-20 h-1 bg-[#7E5D98] mx-auto mb-2"></div>
-          <div class="text-[18px] text-gray-600" style="font-family: 'Proxima Nova Light', sans-serif;">Lisa K.,
+          <div class="text-[18px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">Lisa K.,
             Brisbane Healthcare Provider</div>
         </div>
         <div class="bg-[#EFE7F4] rounded-xl shadow p-8 flex flex-col items-center text-center border border-gray-200">
-          <div class="text-[#7E5D98] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
-          <p class="text-[18px] text-[#2B2135]  mb-8"
-            style="font-family: 'Proxima Nova Light', sans-serif; line-height: 1.5;">
+          <div class="text-[#D4A74A] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+          <p class="para-font text-[#2B2135] mb-8">
             “The After-Hours management system Umer built has streamlined our rostering and patient follow-ups. The
             automation and workflow improvements have saved our staff countless hours every week.”
           </p>
           <div class="w-20 h-1 bg-[#7E5D98] mx-auto mb-2"></div>
-          <div class="text-[18px] text-gray-600" style="font-family: 'Proxima Nova Light', sans-serif;">Michael D.,
+          <div class="text-[18px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">Michael D.,
             Adelaide Care Services</div>
         </div>
         <div class="bg-[#EFE7F4] rounded-xl shadow p-8 flex flex-col items-center text-center border border-gray-200">
-          <div class="text-[#7E5D98] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
-          <p class="text-[18px] text-[#2B21357]  mb-8"
-            style="font-family: 'Proxima Nova Light', sans-serif; line-height: 1.5;">
+          <div class="text-[#D4A74A] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+         <p class="para-font text-[#2B2135] mb-8">
             “Umer’s consulting and development support is top-notch. He guided us through planning, development, and
             compliance considerations for our new healthcare platform. He’s highly responsive and ensures our software
             stays reliable and secure.”
           </p>
           <div class="w-20 h-1 bg-[#7E5D98] mx-auto mb-2"></div>
-          <div class="text-[18px] text-gray-600" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <div class="text-[18px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
             Dr. Emily R., Perth Medical Centre</div>
         </div>
         <div class="bg-[#EFE7F4] rounded-xl shadow p-8 flex flex-col items-center text-center border border-gray-200">
-          <div class="text-[#7E5D98] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
-          <p class="text-[18px] text-[#2B2135]  mb-8"
-            style="font-family: 'Proxima Nova Light', sans-serif; line-height: 1.5;">
+          <div class="text-[#D4A74A] text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+          <p class="para-font text-[#2B2135] mb-8">
             “We needed a custom NDIS management system tailored to our participants’ needs. Umer delivered a fully
             functional, scalable, and compliant solution. His attention to detail and technical expertise are
             impressive.”
           </p>
           <div class="w-20 h-1 bg-[#7E5D98] mx-auto mb-2"></div>
-          <div class="text-[18px] text-gray-600" style="font-family: 'Proxima Nova Light', sans-serif;">Nathan B., Gold
+          <div class="text-[18px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">Nathan B., Gold
             Coast Disability Services</div>
         </div>
       </div>
@@ -1691,23 +1690,25 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="hero-kicker">Services</p>
-        <h1 class="hero-title">
-          Telehealth &amp; HealthTech Software<br />
-          <span>for Australian Clinics &amp; Hospitals</span>
+        <p class="hero-kicker para-font text-[#2B2135] ">Services</p>
+        <h1 class="hero-title lg:text-3xl font-normal mb-2 tracking-wide">
+          TELEHEALTH&amp; HEALTHTECH SOFTWARE
+          <span>FOR AUSTRALIAN CLINICS & HOSPITALS</span>
         </h1>
-        <p class="hero-lead">
+        <p class="para-font text-[#2B2135] mb-8">
           I build secure, cloud‑ready applications using .NET, modern frontends and healthcare integrations,
           helping clinics and health organisations deliver better digital experiences.
         </p>
-        <ul class="hero-list">
+        <ul class="hero-list mb-[40px]">
           <li><span>✓</span> Secure web applications and REST APIs (.NET / ASP.NET Core)</li>
           <li><span>✓</span> Rich frontends with React, TypeScript, HTML5 &amp; CSS frameworks</li>
           <li><span>✓</span> Integrations with HL7 / FHIR, SMD, Medicare and payment gateways</li>
           <li><span>✓</span> Azure cloud hosting, CI/CD pipelines and role‑based security</li>
         </ul>
-        <a href="#contact" class=" text-base font-medium tracking-wider bg-[#5A3E70] text-white px-7 py-2.5 rounded-md hover:bg-[#D4A74A] hover:text-white transition">
-          View Technical Services
+        <a href="#contact"
+          class=" text-sm font-medium tracking-wider bg-[#6A4C82] text-[#fff] px-6 py-3 rounded 
+        hover:bg-[#D4A74A] hover:text-white transition duration-300">
+          VIEW TECHNICAL SERVICES
         </a>
 
 
@@ -1762,11 +1763,11 @@
   <!-- Industries Section -->
   <section id="industries" class="py-16 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-center text-[28px] font-normal text-[#D4A74A] mb-3 tracking-wide"
-        style="font-family: 'Proxima Nova Light', sans-serif;">
+      <h2 class="text-center lg:text-3xl font-normal text-[#D4A74A] mb-3 tracking-wide"
+        style="font-family: Inter, sans-serif; font-weight: 500;">
         HEALTHCARE ORGANISATIONS I PROUDLY SUPPORT
       </h2>
-      <p class="text-center text-[16px] text-[#5A3E70]  mb-6 max-w-3xl mx-auto"
+      <p class="text-center para-font text-[#2B2135]  mb-6 max-w-3xl mx-auto"
         style="font-family: 'Proxima Nova Light', sans-serif;">
         From clinics to hospitals and disability care providers, I deliver custom software solutions that streamline
         operations, improve patient care, and enhance digital healthcare services across Australia.
@@ -1778,87 +1779,87 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Card 1 -->
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-user-nurse text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-user-nurse text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;">Clinics & General Practitioners</h3>
-          <p class="text-[15px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;">Clinics & General Practitioners</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style="font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             Custom systems for appointment scheduling, patient management, billing, and secure telehealth consultations.
           </p>
         </div>
 
         <!-- Card 2 -->
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-hospital-user text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-hospital-user text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;">Hospitals & Specialist Centres</h3>
-          <p class="text-[15px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;">Hospitals & Specialist Centres</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style="font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             Integrated EMR systems, workflow automation, staff management, and enterprise-grade hospital solutions.</p>
         </div>
 
         <!-- Card 3 -->
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-headset text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-headset text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;">Telehealth Providers</h3>
-          <p class="text-[15px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;">Telehealth Providers</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style="font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             Complete telehealth platforms with secure video calls, messaging, patient monitoring, and clinical
             documentation.</p>
         </div>
 
         <!-- Card 4 -->
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-wheelchair text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-wheelchair text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;"> NDIS & Disability Care Services</h3>
-          <p class="text-[15px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;"> NDIS & Disability Care Services</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style="font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             NDIS-compliant solutions for participant management, rostering, reporting, and service delivery tracking.
           </p>
         </div>
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-ambulance text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-ambulance text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;">After-Hours & Urgent Care Services</h3>
-          <p class="text-[15px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;">After-Hours & Urgent Care Services</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style="font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             Optimized systems for after-hours scheduling, triage workflows, patient follow-up, and secure communication.
           </p>
         </div>
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-heartbeat text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-heartbeat text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;">Wellness & Allied Health</h3>
-          <p class="text-[15px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;">Wellness & Allied Health</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style="font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             Software for physiotherapists, psychologists, dieticians, chiropractors, and other allied health providers.
           </p>
         </div>
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-pills text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-pills text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;">Pharmacies & Diagnostic Labs</h3>
-          <p class="text-[15px] text-[#2B2135]" style="font-family: 'Proxima Nova Light', sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;">Pharmacies & Diagnostic Labs</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style="font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             Prescription tracking, lab system integration (HL7/FHIR), inventory management, and secure data workflows.
           </p>
         </div>
         <div class="bg-[#EFE7F4] rounded-lg shadow p-8 text-center border border-gray-100">
-          <div class="w-16 h-16 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-home text-white text-xl"></i>
+          <div class="w-20 h-20 rounded-full bg-[#7E5D98] flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-home text-white text-3xl"></i>
           </div>
-          <h3 class="text-[#5A3E70] text-[16px] font-medium mb-3"
-            style="font-family: 'Proxima Nova Light', sans-serif;">Aged Care & Home Care Services</h3>
-          <p class="text-[15px] text-[#2B2135] style=" font-family: 'Proxima Nova Light' , sans-serif;">
+          <h3 class="text-[#7E5D98] text-lg font-medium mb-2 leading-[26px]"
+            style="font-family: Inter, sans-serif; font-weight: 500; font-size: 18px; line-height: 30px;">Aged Care & Home Care Services</h3>
+          <p class="text-[#2B2135] text-base font-normal leading-[28px] tex-[rgb(30, 32, 34)]" style=" font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;">
             Solutions for home care scheduling, care plans, staff coordination, medication tracking, and compliance
             reporting.</p>
         </div>
@@ -1868,12 +1869,12 @@
 
   <section class="py-16 bg-[#EFE7F4] ">
     <div class="container mx-auto px-4 max-w-5xl text-center ">
-      <h2 class="text-[25px] font-normal text-[#D4A74A] mb-2 tracking-wide line-height:30px;"
-        style="font-family: 'Proxima Nova Light', sans-serif;">BRING YOUR HEALTHCARE SOFTWARE VISION TO LIFE</h2>
+      <h2 class="lg:text-3xl font-normal text-[#D4A74A] mb-2 tracking-wide line-height:30px;"
+        style="font-family: Inter, sans-serif; font-weight: 500;">BRING YOUR HEALTHCARE SOFTWARE VISION TO LIFE</h2>
       <div class="flex justify-center mb-6">
         <span class="block w-16 h-[2px] bg-[#D4A74A] rounded"></span>
       </div>
-      <p class="text-[#2B2135]  text-[18px] mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Transform your
+      <p class="text-[#2B2135]  para-font mb-8" style="font-family: 'Proxima Nova Light', sans-serif;">Transform your
         healthcare technology ideas into secure, scalable, and user-friendly software solutions — from web platforms to
         mobile apps.</p>
       <a href="#contact"
@@ -1887,14 +1888,14 @@
   <!-- FAQ Section -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4 max-w-5xl">
-      <h2 class="text-center text-[28px] font-normal text-[#D4A74A] mb-10 tracking-wide"
-        style="font-family: 'Proxima Nova Light', sans-serif;">FREQUENTLY ASKED QUESTIONS</h2>
+      <h2 class="text-center lg:text-3xl font-normal text-[#D4A74A] mb-10 tracking-wide"
+        style="font-family: Inter, sans-serif; font-weight: 500;">FREQUENTLY ASKED QUESTIONS</h2>
       <div id="faqAccordion" class="space-y-4">
         <!-- FAQ 1 -->
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>How long will it take to develop my healthcare software solution?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1907,7 +1908,7 @@
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>Will my software work on both web and mobile platforms?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1920,7 +1921,7 @@
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>Can you customize the software to match our clinic or hospital workflows?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1932,7 +1933,7 @@
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>What are your payment terms for healthcare software projects?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1944,7 +1945,7 @@
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>Will the software comply with healthcare regulations and data security standards?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1957,7 +1958,7 @@
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>Can you integrate the software with existing systems like EMRs, labs, or payment gateways?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1969,7 +1970,7 @@
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>Do you offer post-launch support and maintenance for healthcare software?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1981,7 +1982,7 @@
         <div class="bg-[#f3f3f3] rounded shadow-sm">
           <button type="button"
             class="w-full flex items-center justify-between px-6 py-5 text-[18px] font-normal focus:outline-none faq-toggle"
-            style="font-family: 'Proxima Nova Light', sans-serif; color: #7E5D98;">
+            style="font-family: 'Proxima Nova Light', sans-serif; color: #5A3E70;">
             <span>Can you build specialized solutions like Telehealth, NDIS, or After-Hours management systems?</span>
             <span class="text-xl text-gray-500 font-bold transition-transform duration-200">+</span>
           </button>
@@ -1994,13 +1995,12 @@
   <!-- Contact Section -->
   <section id="contact" class="bg-[#EFE7F4] py-16 ">
     <div class="container mx-auto px-4">
-      <h2 class="text-center text-[#D4A74A] text-[32px] leading-[1.2] mb-2"
-        style="font-family: 'Proxima Nova Light', sans-serif;">
+      <h2 class="text-center text-[#D4A74A] lg:text-3xl tracking-wide mb-2"
+        style="font-family: Inter, sans-serif; font-weight: 500;">
         HIRE A HEALTHCARE SOFTWARE DEVELOPER TODAY
       </h2>
       <div class="w-16 h-[2px] bg-[#D4A74A] mx-auto mb-4"></div>
-      <p class="text-[#2B2135]  text-center mb-12 text-[16px] max-w-3xl mx-auto leading-[1.6]"
-        style="font-family: 'Proxima Nova Light', sans-serif;">
+      <p class="text-[#2B2135]  text-center mb-12 para-font max-w-3xl mx-auto">
         Provide your project details, including budget and timeline, and let's collaborate to create a secure, scalable,
         and fully compliant healthcare software solution tailored to your organization.
       </p>
@@ -2190,7 +2190,7 @@
 
             <a href="https://facebook.com/yourpage"
               class="w-8 h-8 rounded-md flex items-center justify-center text-white bg-[#D4A74A] hover:bg-[#dbb260]">
-            <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-facebook-f"></i>
             </a>
 
             <a href="https://instagram.com/yourpage"
@@ -2312,4 +2312,3 @@
 </script>
 
 </html>
-
